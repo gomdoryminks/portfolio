@@ -1,0 +1,11 @@
+@font-face {
+	font-family:'BinggraeII-BoldA1';
+	src:url('../font/BinggraeII-BoldA1.eot'); 
+	src:url('../font/BinggraeII-BoldA1.eot?#iefix') format('embedded-opentype'),
+		url('../font/BinggraeII-BoldA1.woff') format('woff'),
+		url('../font/BinggraeII-BoldA1.woff2') format('woff2'),
+		url('../font/BinggraeII-BoldA1.ttf') format('truetype'),
+		url('../font/BinggraeII-BoldA1.svg#BMJUA') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
