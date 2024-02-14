@@ -466,7 +466,9 @@ section.content-wrap div.ilark-text p {
 	color:#FFB330;
 }
 
-section.content-wrap div.edwina-div {
+section.content-wrap div.edwina-div,
+section.content-wrap div.jinsystem-div,
+section.content-wrap div.innopam-div {
 	margin-bottom:5vh;
 }
 
@@ -549,6 +551,9 @@ div.portfolio-content div.portfolio-inner-content span.portfolio-001c30 {
 div.portfolio-content div.portfolio-inner-content span.portfolio-0042ab {
 	background-color: #0042ab;
 }
+div.portfolio-content div.portfolio-inner-content span.portfolio-004cbd {
+	background-color: #004cbd;
+}
 div.portfolio-content div.portfolio-inner-content span.portfolio-0079c2 {
 	background-color: #0079c2;
 }
@@ -617,6 +622,9 @@ div.portfolio-content div.portfolio-inner-content span.portfolio-2e383f {
 }
 div.portfolio-content div.portfolio-inner-content span.portfolio-2f2f2f {
 	background-color: #2f2f2f;
+}
+div.portfolio-content div.portfolio-inner-content span.portfolio-383f43 {
+	background-color: #383f43;
 }
 div.portfolio-content div.portfolio-inner-content span.portfolio-3f1e59 {
 	background-color: #3f1e59;
@@ -729,11 +737,17 @@ div.portfolio-content div.portfolio-inner-content span.portfolio-f05a67 {
 div.portfolio-content div.portfolio-inner-content span.portfolio-f1f5ff {
 	background-color: #f1f5ff;
 }
+div.portfolio-content div.portfolio-inner-content span.portfolio-f3f2ec {
+	background-color: #f3f2ec;
+}
 div.portfolio-content div.portfolio-inner-content span.portfolio-f7920e {
 	background-color: #f7920e;
 }
 div.portfolio-content div.portfolio-inner-content span.portfolio-f7bbd3 {
 	background-color: #f7bbd3;
+}
+div.portfolio-content div.portfolio-inner-content span.portfolio-f8f8f8 {
+	background-color: #f8f8f8;
 }
 div.portfolio-content div.portfolio-inner-content span.portfolio-f9a828 {
 	background-color: #f9a828;
