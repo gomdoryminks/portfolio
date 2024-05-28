@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------------- */
+/* setting
+/* ------------------------------------------------------------------------- */
+body {
+	padding: calc(constant(safe-area-inset-top) + 0px) calc(constant(safe-area-inset-right) + 0px) calc(constant(safe-area-inset-bottom) + 0px) calc(constant(safe-area-inset-left) + 0px);
+    padding: calc(env(safe-area-inset-top) + 0px) calc(env(safe-area-inset-right) + 0px) calc(env(safe-area-inset-bottom) + 0px) calc(env(safe-area-inset-left) + 0px);
+}
+
+/* ------------------------------------------------------------------------- */
+/* common
+/* ------------------------------------------------------------------------- */
+.wrap .c-wrap {
+    height: calc(constant(safe-area-inset-bottom) + 100vh);
+    height: calc(env(safe-area-inset-bottom) + 100vh);
+}
+
+/* ------------------------------------------------------------------------- */
+/* scrollup
+/* ------------------------------------------------------------------------- */
+.scrollup-btn {
+    bottom: calc(constant(safe-area-inset-bottom) + 30px);
+    bottom: calc(env(safe-area-inset-bottom) + 30px);
+}
+
+@media screen and (max-width: 1023px) {
+    .scrollup-btn {
+        bottom: calc(constant(safe-area-inset-bottom) + 100px);
+        bottom: calc(env(safe-area-inset-bottom) + 100px);
+    }
+}
+
