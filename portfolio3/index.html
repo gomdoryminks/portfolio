@@ -1,1 +1,976 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>MKS PORTFOLIO</title>
+		<meta name="description" content="MKS PORTFOLIO">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+        <!-- Chrome, Firefox, Opera -->
+        <meta name="theme-color" content="#e5e5e5">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#e5e5e5">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#e5e5e5">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="shortcut icon" href="img/logo-favicon.ico">
+		<link rel="apple-touch-icon" href="img/logo-favicon.ico">
+		
+		<link href="css/reset.css" type="text/css" rel="stylesheet">
+		<link href="css/font.css" type="text/css" rel="stylesheet">
+		<link href="css/swiper.min.css" type="text/css" rel="stylesheet">
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+        <script src="js/function.js"></script>
+	</head>
 
+	<body>
+        <div class="wrap">
+            <!-- content -->
+            <div class="c-wrap">
+                <!-- nav -->
+                <nav class="nav">
+                    <h1 class="not-view">nav</h1>
+
+                    <ul class="n-list">
+                        <!-- data-menu : 메뉴명 -->
+                        <li data-menu="home" onclick="moveMenu(this);">
+                            <a href="javascript:void(0);">HOME</a>
+                        </li>
+                        <!-- data-menu : 메뉴명 -->
+                        <li data-menu="about" onclick="moveMenu(this);">
+                            <a href="javascript:void(0);">ABOUT</a>
+                        </li>
+                        <!-- data-menu : 메뉴명 -->
+                        <li data-menu="work" onclick="moveMenu(this);">
+                            <a href="javascript:void(0);">WORK</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- page content -->
+                <section class="c-page">
+                    <h1 class="not-view">page content</h1>
+
+                    <!-- home content -->
+                    <article class="c-page-item c-page-home">
+                        <h2 class="not-view">home content</h2>
+
+                        <div class="home-main">
+                            <div class="home-big-item post-it-item">
+                                <div class="home-img"></div>
+                                <div class="home-txt">
+                                    안녕하세요!<br>
+                                    웹퍼블리셔 민경선입니다.
+                                </div>
+                                <ul class="tag-list">
+                                    <li>1993.04</li>
+                                    <li>minksprogram@naver.com</li>
+                                    <li>서울</li>
+                                    <li>양천구</li>
+                                    <li>피할수없으면즐겨라</li>
+                                </ul>
+                            </div>
+                            <div class="home-small-item post-it-item">
+                                <div class="home-img"></div>
+                                <div class="home-txt">
+                                    퍼블리싱에 흥미가 있어서 웹프로그래머에서 웹퍼블리셔로 전향하게 되었습니다.<br>
+                                    웹 표준과 접근성을 준수하며 꼼꼼하고 효율적인 코딩을 하겠습니다.<br>
+                                    끊임없이 노력하며 꾸준히 발전하는 웹퍼블리셔가 되겠습니다!
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- footer -->
+                        <footer class="footer">
+                            <h3 class="not-view">footer</h3>
+
+                            <div class="f-txt">
+                                본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br>
+                                ⓒ MKS PORTFOLIO. All Rights Reserved.
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- about content -->
+                    <article class="c-page-item c-page-about">
+                        <h2 class="not-view">about content</h2>
+
+                        <!-- 경력 -->
+                        <div class="about-item post-it-item">
+                            <div class="about-tit">경력</div>
+                            <ul class="about-list">
+                                <li>이노팸연구소 <span>(프리랜서 웹퍼블리셔로 근무 / 2023.11 - 2024.01)</span></li>
+                                <li>제이아이엔시스템 <span>(프론트엔드개발자로 근무 / 2021.03 - 2023.10)</span></li>
+                                <li>에드위너(호나소프트) <span>(웹퍼블리셔로 근무 / 2019.11 - 2021.02)</span></li>
+                                <li>아이락커뮤니케이션 <span>(웹프로그래머로 근무 / 2013.11 - 2019.02)</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- 교육 -->
+                        <div class="about-item post-it-item">
+                            <div class="about-tit">교육</div>
+                            <ul class="about-list">
+                                <li>디지털디자인 향상과정(HTML5) <span>(그린컴퓨터아카데미 수료 / 2016.09 - 2016.10)</span></li>
+                                <li>디지털디자인 향상과정(Javascript&amp;Jquery) <span>(그린컴퓨터아카데미 수료 / 2016.08 - 2016.09)</span></li>
+                                <li>드림위버&amp;웹표준 및 웹접근성 <span>(그린컴퓨터아카데미 수료 / 2016.06 - 2016.08)</span></li>
+                                <li>포토샵 기본+활용 <span>(그린컴퓨터아카데미 수료 / 2016.04 - 2016.06)</span></li>
+                                <li>부천대학교 <span>(정보통신과 졸업 / 2014.02)</span></li>
+                                <li>맞춤형 UX 응용하이브리드 앱 <span>(청년취업아카데미 서울 디지털 단지 전문 수료 / 2013.07 - 2013.08)</span></li>
+                                <li>네트워크 관리사 <span>(부천대학교 사회교육원 수료 / 2013.04 - 2013.05)</span></li>
+                                <li>리더십 캠프 <span>(롯데인제개발원 수료 / 2012.05)</span></li>
+                                <li>수명고등학교 <span>(고등학교 졸업 / 2012.02)</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- 자격증 -->
+                        <div class="about-item post-it-item">
+                            <div class="about-tit">자격증</div>
+                            <ul class="about-list">
+                                <li>정보처리산업기사 <span>(2013.08)</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- 기술 -->
+                        <div class="about-item post-it-item">
+                            <div class="about-tit">기술</div>
+                            <ul class="about-list">
+                                <li>
+                                    <div class="level-tit">CSS</div>
+                                    <!-- data-level : 기술 레벨 (0 ~ 5) -->
+                                    <ul class="level-list" data-level="4"></ul>
+                                </li>
+                                <li>
+                                    <div class="level-tit">HTML</div>
+                                    <!-- data-level : 기술 레벨 (0 ~ 5) -->
+                                    <ul class="level-list" data-level="5"></ul>
+                                </li>
+                                <li>
+                                    <div class="level-tit">JAVASCRIPT</div>
+                                    <!-- data-level : 기술 레벨 (0 ~ 5) -->
+                                    <ul class="level-list" data-level="3"></ul>
+                                </li>
+                                <li>
+                                    <div class="level-tit">JQUERY</div>
+                                    <!-- data-level : 기술 레벨 (0 ~ 5) -->
+                                    <ul class="level-list" data-level="4"></ul>
+                                </li>
+                                <li>
+                                    <div class="level-tit">PHOTOSHOP</div>
+                                    <!-- data-level : 기술 레벨 (0 ~ 5) -->
+                                    <ul class="level-list" data-level="3"></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- work content -->
+                    <article class="c-page-item c-page-work">
+                        <h2 class="not-view">work content</h2>
+
+                        <!-- data-title : 프로젝트 그룹명 -->
+                        <div class="work-item" data-title="innopam">
+                            <div class="work-tit">이노팸연구소</div>
+                            <ul class="work-list">
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="cultivation-member" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">재배작물대민신고 사용자 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>MOBILE</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/cultivation-member/mobile/memberStep1-1.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="cultivation-admin" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">재배작물관리/불법산림훼손관리/해양쓰레기관리 서비스 관리자 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>PC</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/cultivation-admin/main/index1-1.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- data-title : 프로젝트 그룹명 -->
+                        <div class="work-item" data-title="jinsystem">
+                            <div class="work-tit">제이아이엔시스템</div>
+                            <ul class="work-list">
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="agile" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">애자일 관리자 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>PC</li>
+                                            <li>DatePicker</li>
+                                            <li>업로드창커스텀</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/agile/admin/admin-list.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="jejuschool-admin2" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">안심통학정보서비스 관리 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>PC</li>
+                                            <li>BOOTSTRAP</li>
+                                            <li>ChartJs</li>
+                                            <li>ColorPicker</li>
+                                            <li>레이어창커스텀</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/jejuschool/new-index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="incheonbus-admin" data-background="#cbcbcb" data-color="#212121">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">인천버스시범사업 관리자 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>PC</li>
+                                            <li>레이어창커스텀</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/incheonbus-admin/notice-list.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="incheonbus-kiosk" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">인천버스시범사업 키오스크 웹앱</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>KIOSK</li>
+                                            <li>KakaoMapAPI</li>
+                                            <li>노선도그리기</li>
+                                            <li>도착알림롤링</li>
+                                            <li>동영상슬라이드</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/incheonbus-kiosk/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="incheonbus-member" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">인천버스시범사업 라이브버스 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>KakaoMapAPI</li>
+                                            <li>SetInterval</li>
+                                            <li>노선도그리기</li>
+                                            <li>레이어창커스텀</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/incheonbus-member/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="safeparking" data-background="#d9cab3" data-color="#251e13">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">제주주차안심 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>관리자-PC</li>
+                                            <li>사용자-반응형</li>
+                                            <li>QrcodeJs</li>
+                                            <li>TuiImageEditor</li>
+                                            <li>템플릿배경설정</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/safeparking/admin/index.html');">
+                                            <span>관리자 바로가기</span>
+                                        </button>
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/safeparking/member/index.html');">
+                                            <span>사용자 바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="shareparking" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">주차장공유서비스 관리 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>PC</li>
+                                            <li>BOOTSTRAP</li>
+                                            <li>ChartJs</li>
+                                            <li>댓글폼만들기</li>
+                                            <li>자동완성기능</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/shareparking/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="daehong" data-background="#a9c2b8" data-color="#18211d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">대홍기획 아카이브 라이브러리 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>PC</li>
+                                            <li>동영상컨트롤</li>
+                                            <li>드래그순서변경</li>
+                                            <li>레이어창커스텀</li>
+                                            <li>자동완성기능</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/daehong/admin/login.html');">
+                                            <span>관리자 바로가기</span>
+                                        </button>
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/daehong/member/index.html');">
+                                            <span>사용자 바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="water" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">상수도관리시스템 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>ChartJs</li>
+                                            <li>TuiGrid</li>
+                                            <li>계통도만들기</li>
+                                            <li>화면스크린샷</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/water/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="udoda" data-background="#a9c2b8" data-color="#18211d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">우도관광서비스 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>MOBILE</li>
+                                            <li>KakaoMapAPI</li>
+                                            <li>SwiperSlide</li>
+                                            <li>레이어창커스텀</li>
+                                            <li>업로드창커스텀</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/udoda/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="redbus" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">광역(시외)버스스마트안전서비스 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>관리자-PC</li>
+                                            <li>사용자-MOBILE</li>
+                                            <li>KakaoMapAPI</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/redbus/suwon/map.html');">
+                                            <span>관리자 바로가기</span>
+                                        </button>
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/redbus/mobile/suwon/index.html');">
+                                            <span>사용자 바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="icgis" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">IC공간정보 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SetInterval</li>
+                                            <li>SmoothScroll</li>
+                                            <li>WowAnimation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/icgis/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="digitalnomad" data-background="#d9cab3" data-color="#251e13">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">디지털노마드 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>관리자-PC</li>
+                                            <li>사용자-반응형</li>
+                                            <li>FullCalendar</li>
+                                            <li>댓글폼만들기</li>
+                                            <li>스크롤페이징</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/digitalnomad/admin/managers-admin-list.html');">
+                                            <span>관리자 바로가기</span>
+                                        </button>
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/digitalnomad/member/index.html');">
+                                            <span>사용자 바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="riverplatform2" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">하천플랫폼 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>PC</li>
+                                            <li>ColorPicker</li>
+                                            <li>DialogPopup</li>
+                                            <li>ZoomLevelBar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/riverplatform/하천플랫폼관리.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="jinsystem2" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">jinsystem 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>MagnificPopup</li>
+                                            <li>SmoothScroll</li>
+                                            <li>SwiperSlide</li>
+                                            <li>WowAnimation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/jinsystem/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- data-title : 프로젝트 그룹명 -->
+                        <div class="work-item" data-title="edwina">
+                            <div class="work-tit">에드위너(호나소프트)</div>
+                            <ul class="work-list">
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="foodist" data-background="#e5aaa8" data-color="#2c0e0d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">식자재 쇼핑몰 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>MOBILE</li>
+                                            <li>SwiperSlide</li>
+                                            <li>레이어창커스텀</li>
+                                            <li>입력창커스텀</li>
+                                            <li>폼유효성검사</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/foodist/mw/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="salman" data-background="#d9cab3" data-color="#251e13">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">살만 업체 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SwiperSlide</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/salman/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="fresh" data-background="#a9c2b8" data-color="#18211d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">야채 쇼핑몰 메인페이지</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SwiperSlide</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/fresh/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="awakeme" data-background="#cbcbcb" data-color="#212121">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">리뉴얼한 동영상 재생 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SlickSlide</li>
+                                            <li>동영상롤링</li>
+                                            <li>레이어창커스텀</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/awakeme/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="womenclinic" data-background="#e5aaa8" data-color="#2c0e0d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">산부인과 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SlickSlide</li>
+                                            <li>퀵메뉴스크롤</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/womenclinic/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="nyjscc-fc" data-background="#d9cab3" data-color="#251e13">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">남양주시육아종합지원센터 가정양육 지원 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>BxSlider</li>
+                                            <li>DatePicker</li>
+                                            <li>레이어창커스텀</li>
+                                            <li>캘린더만들기</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/nyjscc/index_fc.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="pleasure" data-background="#c9c0d3" data-color="#1f1a25">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">동영상 재생 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>동영상롤링</li>
+                                            <li>레이어창커스텀</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/pleasure/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="kbuk" data-background="#cbcbcb" data-color="#212121">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">경북 제품 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SwiperSlide</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/kbuk/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="nyjscc-dc" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">남양주시육아종합지원센터 어린이집 지원 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>BxSlider</li>
+                                            <li>DatePicker</li>
+                                            <li>레이어창커스텀</li>
+                                            <li>캘린더만들기</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/nyjscc/index_dc.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="human" data-background="#d9cab3" data-color="#251e13">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">도서관 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SwiperSlide</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/human/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="rib" data-background="#e5aaa8" data-color="#2c0e0d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">갈비 체인점 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SwiperSlide</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/rib/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="agaya" data-background="#e5aaa8" data-color="#2c0e0d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">난임 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>FullpageScroll</li>
+                                            <li>SwiperSlide</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/agaya/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="mj" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">글로벌 아카데미 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SwiperSlide</li>
+                                            <li>헤더슬라이드</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('https://gomdoryminks.github.io/mj/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- data-title : 프로젝트 그룹명 -->
+                        <div class="work-item" data-title="ilark">
+                            <div class="work-tit">아이락커뮤니케이션</div>
+                            <ul class="work-list">
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="pixstory" data-background="#e5aaa8" data-color="#2c0e0d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">PIXSTORY업체전용 포토북 판매사이트</div>
+                                        <div class="work-con">회원관련 페이지 작업 및 기능 테스트를 담당했습니다.</div>
+                                        <ul class="tag-list">
+                                            <li>ASMSETUP</li>
+                                            <li>AptanaStudio3</li>
+                                            <li>MysqlWorkbench6.0</li>
+                                            <li>PHP</li>
+                                            <li>PC</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="bluephoto" data-background="#a9c2b8" data-color="#18211d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">DNP업체전용 졸업앨범 판매사이트</div>
+                                        <div class="work-con">사이트 작업 및 기능 테스트를 담당했습니다.</div>
+                                        <ul class="tag-list">
+                                            <li>ASMSETUP</li>
+                                            <li>AptanaStudio3</li>
+                                            <li>MysqlWorkbench6.0</li>
+                                            <li>PHP</li>
+                                            <li>PC</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="blueapp" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">모바일전용 포토북 판매사이트</div>
+                                        <div class="work-con">사이트 작업 및 기능 테스트를 담당했습니다.</div>
+                                        <ul class="tag-list">
+                                            <li>ASMSETUP</li>
+                                            <li>AptanaStudio3</li>
+                                            <li>MysqlWorkbench6.0</li>
+                                            <li>PHP</li>
+                                            <li>MOBILE</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="yellowkit" data-background="#d9cab3" data-color="#251e13">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">카카오톡명함전용 판매사이트</div>
+                                        <div class="work-con">사이트 작업 및 기능 테스트를 담당했습니다.</div>
+                                        <ul class="tag-list">
+                                            <li>ASMSETUP</li>
+                                            <li>AptanaStudio3</li>
+                                            <li>MysqlWorkbench6.0</li>
+                                            <li>PHP</li>
+                                            <li>PC</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="bizcard" data-background="#bac7d9" data-color="#161e29">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">명함전용 판매사이트</div>
+                                        <div class="work-con">사이트 작업 및 기능 테스트를 담당했습니다.</div>
+                                        <ul class="tag-list">
+                                            <li>ASMSETUP</li>
+                                            <li>AptanaStudio3</li>
+                                            <li>MysqlWorkbench6.0</li>
+                                            <li>PHP</li>
+                                            <li>PC</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- data-title : 프로젝트 그룹명 -->
+                        <div class="work-item" data-title="portfolio">
+                            <div class="work-tit">포트폴리오</div>
+                            <ul class="work-list">
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="portfolio3" data-background="#a9c2b8" data-color="#18211d">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">개인 포트폴리오 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('../portfolio3/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <!-- data-name : 프로젝트명, data-background : 배경색, data-color : 글자색 -->
+                                <li class="post-it-item" data-name="portfolio2" data-background="#d9cab3" data-color="#251e13">
+                                    <div class="work-img"></div>
+                                    <div class="work-txt">
+                                        <div class="work-name">토토로 쇼핑몰 사이트</div>
+                                        <ul class="tag-list">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JQUERY</li>
+                                            <li>반응형</li>
+                                            <li>SwiperSlide</li>
+                                        </ul>
+                                    </div>
+                                    <div class="work-btn">
+                                        <button type="button" onclick="window.open('../portfolio2/index.html');">
+                                            <span>바로가기</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <!-- scrollup -->
+            <div class="scrollup-btn"></div>
+
+            <!-- layer -->
+            <div class="l-wrap"></div>
+        </div>
+	</body>
+</html>
