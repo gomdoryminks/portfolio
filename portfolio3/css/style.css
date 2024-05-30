@@ -288,7 +288,7 @@ button>span {
         top: -25px;
     }
     .wrap .tag-list>li {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         font-size: 0.813rem;
     }
 }
@@ -328,30 +328,33 @@ nav.nav .n-list>li {
 }
 nav.nav .n-list>li>a {
     position: relative;
+    z-index: 1;
     word-break: break-all;
+    text-shadow: -1px 0px #ffffff, 0px 1px #ffffff, 1px 0px #ffffff, 0px -1px #ffffff;
 }
 nav.nav .n-list>li>a:before {
     content: '';
-    width: 40px;
-    height: 40px;
+    width: 96px;
+    height: 96px;
     display: block;
     position: absolute;
-    top: -45px;
-    left: -10px;
-    background: transparent url('../img/icon-panda-0.png') no-repeat center;
+    bottom: -5px;
+    left: 50%;
+    z-index: -1;
+    background: transparent url('../img/icon-menu-0.svg') no-repeat center;
     background-size: contain;
     opacity: 0;
-    -webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    transform: rotate(20deg);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 nav.nav .n-list>li.on>a:before {
-    top: -35px;
+    bottom: -15px;
     opacity: 1;
 }
 nav.nav .n-list>li>a:after {
@@ -399,23 +402,12 @@ nav.nav .n-list>li.on>a:after {
         flex-flow: row;
     }
     nav.nav .n-list>li>a:before {
-        top: -30px;
-        left: -35px;
+        width: 76px;
+        height: 76px;
+        bottom: -2px
     }
     nav.nav .n-list>li.on>a:before {
-        top: -20px;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    nav.nav .n-list>li>a:before {
-        width: 30px;
-        height: 30px;
-        top: -25px;
-        left: -25px;
-    }
-    nav.nav .n-list>li.on>a:before {
-        top: -15px;
+        bottom: -12px
     }
 }
 
@@ -523,9 +515,18 @@ footer.footer .f-txt {
     height: 28vw;
     max-height: 400px;
     min-height: 192px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 20px;
-    background: #ffffff url('../img/img-panda-0.svg') no-repeat center;
-    background-size: cover;
+    background-color: #ffffff;
+}
+.c-page .home-main .home-big-item .home-img svg {
+    width: 80%;
+    height: 80%;
 }
 .c-page .home-main .home-big-item .home-txt {
     margin-bottom: 15px;
@@ -560,9 +561,18 @@ footer.footer .f-txt {
     height: 20vw;
     max-height: 300px;
     min-height: 164px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 20px;
-    background: #ffffff url('../img/img-panda-1.svg') no-repeat center;
-    background-size: cover;
+    background-color: #ffffff;
+}
+.c-page .home-main .home-small-item .home-img svg {
+    width: 90%;
+    height: 90%;
 }
 .c-page .home-main .home-small-item .home-txt {
     color: #251e13;
@@ -585,17 +595,29 @@ footer.footer .f-txt {
     flex: 0 0 auto;
     margin: 40px 2% 10px 3%;
     background-color: #6d9886;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    transform: rotate(-1deg);
 }
 .c-page .about-item:nth-of-type(2n) {
     margin: 40px 3% 10px 2%;
     background-color: #d9cab3;
 }
+.c-page .about-item:hover {
+    -webkit-transform: rotate(0) scale(1.01);
+    -moz-transform: rotate(0) scale(1.01);
+    -ms-transform: rotate(0) scale(1.01);
+    transform: rotate(0) scale(1.01);
+}
 .c-page .about-item .about-tit {
-    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
     color: #18211d;
     font-size: 1.5rem;
     line-height: 1.2em;
     font-weight: 900;
+    text-align: center;
     word-break: keep-all;
 }
 .c-page .about-item:nth-of-type(2n) .about-tit {
@@ -603,37 +625,40 @@ footer.footer .f-txt {
 }
 .c-page .about-item .about-list {
     height: 100%;
-    min-height: 80px;
+    min-height: 60px;
     position: relative;
-    padding: 15px;
+    z-index: 1;
+    padding: 20px 15px;
     background-color: #ffffff;
 }
 .c-page .about-item .about-list:after {
     content: '';
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: block;
     position: absolute;
     bottom: 0;
-    right: 5px;
-    background: transparent url('../img/icon-panda-1.png') no-repeat center;
+    right: 10px;
+    z-index: -1;
+    background: transparent url('../img/img-about-0.svg') no-repeat center;
     background-size: contain;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 .c-page .about-item .about-list>li {
-    margin-bottom: 10px;
-    margin-left: 16px;
-    text-indent: -16px;
+    margin-bottom: 12px;
+    margin-left: 21px;
+    text-indent: -21px;
 }
 .c-page .about-item .about-list>li:before {
     content: '';
-    width: 10px;
-    height: 1px;
+    width: 16px;
+    height: 16px;
     display: inline-block;
     vertical-align: top;
-    margin-top: 9px;
+    margin-top: 2px;
     margin-right: 5px;
-    background-color: #212121;
+    background: transparent url('../img/icon-list-0.png') no-repeat center;
+    background-size: contain;
 }
 .c-page .about-item .about-list>li>span {
     display: block;
@@ -642,7 +667,7 @@ footer.footer .f-txt {
     text-indent: 0;
 }
 .c-page .about-item .level-tit {
-    min-width: 114px;
+    min-width: 108px;
     display: inline-block;
     vertical-align: top;
     text-indent: 0;
@@ -689,13 +714,13 @@ footer.footer .f-txt {
 }
 .c-page .work-item .work-tit:after {
     content: '';
-    width: 48px;
+    width: 100px;
     height: 100%;
     display: block;
     position: absolute;
-    bottom: -10px;
+    bottom: -5px;
     right: 0;
-    background: transparent url('../img/icon-panda-1.png') no-repeat center;
+    background: transparent url('../img/img-work-0.svg') no-repeat center;
     background-size: contain;
 }
 .c-page .work-item .work-list {
@@ -718,6 +743,16 @@ footer.footer .f-txt {
     margin: 40px 1% 10px;
     background-color: #a9c2b8;
     color: #18211d;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+.c-page .work-item .work-list>li:hover {
+    -webkit-transform: rotate(0) scale(1.01);
+    -moz-transform: rotate(0) scale(1.01);
+    -ms-transform: rotate(0) scale(1.01);
+    transform: rotate(0) scale(1.01);
 }
 .c-page .work-item .work-list>li .work-img {
     width: 100%;
@@ -774,7 +809,14 @@ footer.footer .f-txt {
 .c-page .work-item .work-list>li .work-btn button {
     width: 100%;
     margin-top: 10px;
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+    line-height: 35px;
     font-weight: 500;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+	border-radius: 999px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -908,10 +950,10 @@ footer.footer .f-txt {
     }
     .c-page .home-main .home-big-item .home-img {
         height: 60vw;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
     .c-page .home-main .home-big-item .home-txt {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         font-size: 1.375rem;
     }
     .c-page .home-main .home-small-item {
@@ -920,7 +962,7 @@ footer.footer .f-txt {
     }
     .c-page .home-main .home-small-item .home-img {
         height: 51vw;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
     .c-page .home-main .home-small-item .home-txt {
         font-size: 0.938rem;
@@ -932,32 +974,35 @@ footer.footer .f-txt {
         margin-top: 35px;
     }
     .c-page .about-item .about-tit {
-        margin-bottom: 10px;
+        padding: 12px;
         font-size: 1.25rem;
     }
     .c-page .about-item .about-list {
-        padding: 10px;
+        padding: 18px 12px;
     }
     .c-page .about-item .about-list>li {
-        margin-bottom: 8px;
-        margin-left: 14px;
+        margin-bottom: 10px;
+        margin-left: 20px;
         font-size: 0.938rem;
-        text-indent: -14px;
+        text-indent: -20px;
     }
     .c-page .about-item .about-list>li:before {
-        width: 8px;
+        width: 14px;
+        height: 14px;
+        margin-top: 3px;
     }
     .c-page .about-item .about-list>li>span {
         font-size: 0.813rem;
     }
     .c-page .about-item .level-tit {
-        min-width: 104px;
+        min-width: 98px;
     }
     .c-page .about-item .level-list {
         margin-top: 7px;
     }
     .c-page .about-item .level-list>li {
-        width: 16px;
+        width: 17px;
+        margin-left: 5px;
     }
     .c-page .work-item .work-tit {
         font-size: 1.25rem;
@@ -969,14 +1014,14 @@ footer.footer .f-txt {
         margin-top: 35px;
     }
     .c-page .work-item .work-list>li .work-img {
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
     .c-page .work-item .work-list>li .work-txt .work-name {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         font-size: 1.125rem;
     }
     .c-page .work-item .work-list>li .work-txt .work-con {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         font-size: 0.813rem;
     }
     .c-page .work-item .work-list>li .work-txt .work-name + .work-con {
@@ -986,7 +1031,6 @@ footer.footer .f-txt {
         gap: 5px;
     }
     .c-page .work-item .work-list>li .work-btn button {
-        margin-top: 5px;
         font-size: 0.938rem;
     }
 }
