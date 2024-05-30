@@ -1,3 +1,6 @@
+//전역변수
+let svgTimer;
+
 $(function() {
     let userAgent = navigator.userAgent.toLowerCase();
 
@@ -47,8 +50,11 @@ $(function() {
 
 //메뉴 클릭시 페이지 이동
 function moveMenu(obj) {
+    clearInterval(svgTimer);
+
     let dataMenu = $(obj).attr("data-menu");
     let postItDelay = 0;
+    let svgObj = {};
 
     $(".c-page").stop().scrollTop(0);
 
@@ -61,7 +67,37 @@ function moveMenu(obj) {
     $(".c-page-item").find(".post-it-item").removeClass("on");
     $(".c-page-item").find(".post-it-item").stop().css({"top":"-10px", "opacity":"0"});
 
-    if (dataMenu == "about") {
+    if (dataMenu == "home") {
+        $(".c-page-" + dataMenu).find(".home-img").find("svg").each(function(index) {
+            let dataFills = $(this).attr("data-fills");
+            let dataOriginalFill = $(this).attr("data-original-fill");
+            
+            //svg 기본색 설정
+            if (dataOriginalFill != undefined && dataOriginalFill != null) {
+                $(this).find("*[data-fill='change']").attr("fill", dataOriginalFill);
+            }
+
+            if (dataFills != undefined && dataFills != null) {
+                let svgFillsArr = dataFills.split('|');
+
+                if (svgFillsArr.length > 0) {
+                    svgObj[index] = {
+                        'svgItemObj': $(this),
+                        'svgFillsArr': svgFillsArr,
+                        'svgFillsIdx': 0
+                    };
+                }
+            }
+        });
+
+        //svg 변경할 색 설정
+        svgTimer = setInterval(function() {
+            $.each(svgObj, function(idx, el) {
+                el.svgItemObj.find("*[data-fill='change']").attr("fill", el.svgFillsArr[el.svgFillsIdx]);
+                el.svgFillsIdx = (el.svgFillsIdx < (el.svgFillsArr.length - 1)) ? el.svgFillsIdx + 1 : 0;
+            });
+        }, 4000);
+    } else if (dataMenu == "about") {
         //기술 레벨 설정
         $(".c-page-" + dataMenu).find(".level-list").each(function() {
             let dataLevel = $(this).attr("data-level");
@@ -138,7 +174,7 @@ function moveMenu(obj) {
             $(this).find(".scroll-img").hover(function() {
                 let imgWidth = $(this).find("img").width();
                 let imgHeight = $(this).find("img").height();
-                let scrollTime = Math.round(imgHeight / imgWidth) * 3000;
+                let scrollTime = Math.round((imgHeight / imgWidth) * 2500);
                 
                 $(this).stop().animate({scrollTop: $(this).find("img").height()}, scrollTime);
             }, function() {
