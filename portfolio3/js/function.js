@@ -41,11 +41,6 @@ $(function() {
             $(".scrollup-btn").fadeOut("slow");
         }
     });
-
-    //위로가기 버튼 클릭시
-    $(".scrollup-btn").click(function() {
-        $(".c-page").stop().animate({scrollTop: 0}, 1000);
-    });
 });
 
 //메뉴 클릭시 페이지 이동
@@ -91,12 +86,15 @@ function moveMenu(obj) {
         });
 
         //svg 변경할 색 설정
-        svgTimer = setInterval(function() {
-            $.each(svgObj, function(idx, el) {
-                el.svgItemObj.find("*[data-fill='change']").attr("fill", el.svgFillsArr[el.svgFillsIdx]);
-                el.svgFillsIdx = (el.svgFillsIdx < (el.svgFillsArr.length - 1)) ? el.svgFillsIdx + 1 : 0;
-            });
-        }, 4000);
+        if (Object.keys(svgObj).length > 0) {
+            svgTimer = setInterval(function() {
+                $.each(svgObj, function(idx, el) {
+                    el.svgItemObj.find("*[data-fill='change']").attr("fill", el.svgFillsArr[el.svgFillsIdx]);
+                    el.svgFillsIdx = (el.svgFillsIdx < (el.svgFillsArr.length - 1)) ? el.svgFillsIdx + 1 : 0;
+                });
+            }, 4000);
+        }
+        
     } else if (dataMenu == "about") {
         //기술 레벨 설정
         $(".c-page-" + dataMenu).find(".level-list").each(function() {
@@ -116,27 +114,18 @@ function moveMenu(obj) {
             let dataTitle = $(this).closest(".work-item").attr("data-title");
             let dataName = $(this).attr("data-name");
             let dataBackground = $(this).attr("data-background");
-            let dataColor = $(this).attr("data-color");
-            let imgSrc = "img/img-panda-0.svg";
+            let imgSrc = "img/img-work-0.svg";
             let scrollFlag = true;
 
-            //프로젝트별 배경색과 글자색 설정
-            dataBackground = (dataBackground != undefined && dataBackground != null) ? dataBackground : "#6d9886";
-            dataColor = (dataColor != undefined && dataColor != null) ? dataColor : "#26352f";
+            //프로젝트별 배경색 설정
+            dataBackground = (dataBackground != undefined && dataBackground != null) ? dataBackground : "#e48db0";
 
-            $(this).css({"background-color":dataBackground, "color":dataColor});
-            $(this).find(".tag-list").children("li").css({"border-color":dataColor, "color":dataColor});
+            $(this).css({"background-color":dataBackground});
             
-            $(this).find("button").each(function() {
-                $(this).hover(function() {
-                    if ($(this).prop("disabled") == false) {
-                        $(this).css({"background-color":dataColor, "color":"#ffffff"});
-                    } else {
-                        $(this).css({"background-color":"#ffffff", "border-color":dataColor, "color":dataColor});
-                    }
-                }, function() {
-                    $(this).css({"background-color":"#ffffff", "border-color":dataColor, "color":dataColor});
-                });
+            $(this).find("button").each(function(idx) {
+                if (idx == 0) {
+                    $(this).css({"background-color":dataBackground, "border-color":dataBackground});
+                }
             });
 
             //프로젝트별 이미지 설정
@@ -200,5 +189,10 @@ function moveMenu(obj) {
             postItDelay = postItDelay + 1000;
         });
     }
+}
+
+//위로가기 버튼 클릭시 위로 이동
+function scrollUp() {
+    $(".c-page").stop().animate({scrollTop: 0}, 1000);
 }
 
