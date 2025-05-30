@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>알잠앱 커뮤니티 마이페이지</title>
+		<meta name="description" content="알잠앱 커뮤니티 마이페이지">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<!-- Chrome, Firefox, Opera -->
+        <meta name="theme-color" content="#ffffff">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#ffffff">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- 기존 css -->
+		<link href="../css/2023/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/global.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/main.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/community.css" type="text/css" rel="stylesheet">
+		<link href="../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/global.css" type="text/css" rel="stylesheet">
+		<link href="../css/main.css" type="text/css" rel="stylesheet">
+		<link href="../css/pdas.css" type="text/css" rel="stylesheet">
+		<link href="../css/userCss.css" type="text/css" rel="stylesheet">
+		<link href="../css/swiper11-bundle.min.css" type="text/css" rel="stylesheet">
+
+		<!-- new css -->
+		<link href="../css/2025/font.css" type="text/css" rel="stylesheet">
+		<link href="../css/2025/style.css" type="text/css" rel="stylesheet">
+
+		<!-- 기존 js -->
+		<script src="../js/swiper11-bundle.min.js"></script>
+
+		<!-- new js -->
+		<script src="../js/2025/script.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap" class="v30">
+			<!-- 20250525 수정사항 Start -->
+			<!-- nav: 기존 하단 메뉴바 영역 -->
+			<nav>
+				<ul class="fnb menu">
+					<li><a>쇼핑</a></li>
+					<li class="selected"><a class="primary">커뮤니티</a></li>
+					<li><a>통잠로드맵</a></li>
+					<li><a>패턴입력</a></li>
+					<li><a>소아과진료</a></li>
+					<li><a>육아질문</a></li>
+				</ul>
+			</nav>
+			<!--// 20250525 수정사항 End -->
+
+			<!-- aljam: new 알잠앱 전체 영역 -->
+			<div class="aljam">
+				<!-- aljam__inner-fix: 화면 높이에 맞춰 컨텐츠 높이 적용 -->
+				<div class="aljam__inner-fix">
+					<!-- aljam__header: 헤더 영역, border-none: 헤더 영역 밑에 라인 없을 경우 -->
+					<header class="aljam__header border-none">
+						<div class="aljam__header-left">
+							<button type="button" class="aljam__btn-back" onclick="history.back();">
+								<span class="blind">뒤로 이동</span>
+							</button>
+						</div>
+		
+						<h1 class="aljam__header-tit blind">마이페이지</h1>
+					</header>
+
+					<!-- aljam__page: 컨텐츠 영역 -->
+					<section class="aljam__page">
+						<!-- aljam__profile: 상단 프로필 영역 -->
+						<div class="aljam__profile">
+							<div class="aljam__profile-img">
+								<img src="../assets/images/2025/img-detail-04.png" alt="사용자 계정 이미지">
+							</div>
+
+							<!-- 20250525 수정사항 Start -->
+							<div class="aljam__profile-txt">
+								<div class="aljam__profile-name">
+									<div class="profile-name">둥이맘</div>
+									<!-- toggleProfileBtn 함수 호출시 닉네임 수정창이 보여지거나 숨겨짐 -->
+									<button type="button" class="aljam__btn-profile" onclick="toggleProfileBtn(this);">
+										<span class="blind">닉네임 수정</span>
+									</button>
+								</div>
+								<!-- [class]: 닉네임 수정창을 보여줄 경우 on 클래스 추가 -->
+								<div class="aljam__profile-form">
+									<form id="" name="" method="" action="">
+										<label>
+											<span class="sr-only">닉네임 수정</span>
+											<input type="text" id="" name="">
+										</label>
+										<button type="button" class="aljam__btn-txt" onclick="">
+											<span>수정</span>
+										</button>
+									</form>
+								</div>
+							</div>
+							<!--// 20250525 수정사항 End -->
+						</div>
+
+						<!-- aljam__tablist: 상단 탭버튼 영역 -->
+						<div class="aljam__tablist" role="tablist">
+							<!-- [aria-selected]: 선택된 탭일 경우 true / 선택안된 탭일 경우 false, [aria-controls]: 해당 탭버튼 선택시 보여줄 패널 아이디 설정 -->
+							<button type="button" id="community-tab-01" class="aljam__tab" role="tab" aria-selected="true" aria-controls="community-panel-01">
+								<span>작성글</span>
+							</button>
+							<!-- [aria-selected]: 선택된 탭일 경우 true / 선택안된 탭일 경우 false, [aria-controls]: 해당 탭버튼 선택시 보여줄 패널 아이디 설정 -->
+							<button type="button" id="community-tab-02" class="aljam__tab" role="tab" aria-selected="false" aria-controls="community-panel-02">
+								<span>댓글단 글</span>
+							</button>
+							<!-- [aria-selected]: 선택된 탭일 경우 true / 선택안된 탭일 경우 false, [aria-controls]: 해당 탭버튼 선택시 보여줄 패널 아이디 설정 -->
+							<button type="button" id="community-tab-03" class="aljam__tab" role="tab" aria-selected="false" aria-controls="community-panel-03">
+								<span>좋아요한 글</span>
+							</button>
+						</div>
+		
+						<div class="aljam__box">
+							<!-- [class]: 해당 패널 영역을 보여줄 경우 on 클래스 추가, [aria-labelledby]: 해당 패널과 연결된 탭버튼 아이디 설정 -->
+							<div id="community-panel-01" class="aljam__panel on" role="tabpanel" aria-labelledby="community-tab-01">
+								<!-- aljam__list: 리스트 영역 -->
+								<ul class="aljam__list">
+									<li>
+										<a href="community-detail.html">
+											<div class="aljam__list-info">
+												<div class="aljam__list-info-item">
+													<div class="aljam__info-tit">6개월 아기 낮잠과 밤잠</div>
+												</div>
+												<div class="aljam__list-info-item">
+													<span class="aljam__info-id">둥이맘</span>
+													<span class="aljam__info-time">4시간 전</span>
+													<span class="aljam__info-view">350</span>
+													<span class="aljam__info-comment">20</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="community-detail.html">
+											<div class="aljam__list-info">
+												<div class="aljam__list-info-item">
+													<div class="aljam__info-tit">안먹고 계속 자는데 괜찮을까요?</div>
+												</div>
+												<div class="aljam__list-info-item">
+													<span class="aljam__info-id">둥이맘</span>
+													<span class="aljam__info-time">4시간 전</span>
+													<span class="aljam__info-view">350</span>
+													<span class="aljam__info-comment">20</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="community-detail.html">
+											<div class="aljam__list-info">
+												<div class="aljam__list-info-item">
+													<div class="aljam__info-tit">울리면서 수면교육 해도 될까요?</div>
+												</div>
+												<div class="aljam__list-info-item">
+													<span class="aljam__info-id">둥이맘</span>
+													<span class="aljam__info-time">4시간 전</span>
+													<span class="aljam__info-view">350</span>
+													<span class="aljam__info-comment">20</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="community-detail.html">
+											<div class="aljam__list-info">
+												<div class="aljam__list-info-item">
+													<div class="aljam__info-tit">먹어야 자는 아기</div>
+												</div>
+												<div class="aljam__list-info-item">
+													<span class="aljam__info-id">둥이맘</span>
+													<span class="aljam__info-time">4시간 전</span>
+													<span class="aljam__info-view">350</span>
+													<span class="aljam__info-comment">20</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="community-detail.html">
+											<div class="aljam__list-info">
+												<div class="aljam__list-info-item">
+													<div class="aljam__info-tit">이유식을 잘 안먹어요</div>
+												</div>
+												<div class="aljam__list-info-item">
+													<span class="aljam__info-id">둥이맘</span>
+													<span class="aljam__info-time">4시간 전</span>
+													<span class="aljam__info-view">350</span>
+													<span class="aljam__info-comment">20</span>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- [class]: 해당 패널 영역을 보여줄 경우 on 클래스 추가, [aria-labelledby]: 해당 패널과 연결된 탭버튼 아이디 설정 -->
+							<div id="community-panel-02" class="aljam__panel" role="tabpanel" aria-labelledby="community-tab-02">
+								<!-- aljam__list: 리스트 영역 -->
+								<ul class="aljam__list">
+									<li>
+										<a href="community-detail.html">
+											<div class="aljam__list-info">
+												<div class="aljam__list-info-item">
+													<div class="aljam__info-tit">6개월 아기 낮잠과 밤잠</div>
+												</div>
+												<div class="aljam__list-info-item">
+													<span class="aljam__info-id">둥이맘</span>
+													<span class="aljam__info-time">4시간 전</span>
+													<span class="aljam__info-view">350</span>
+													<span class="aljam__info-comment">20</span>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							
+							<!-- [class]: 해당 패널 영역을 보여줄 경우 on 클래스 추가, [aria-labelledby]: 해당 패널과 연결된 탭버튼 아이디 설정 -->
+							<div id="community-panel-03" class="aljam__panel" role="tabpanel" aria-labelledby="community-tab-03">
+								<!-- aljam__list: 리스트 영역 -->
+								<ul class="aljam__list">
+									<li>
+										<a href="community-detail.html">
+											<div class="aljam__list-info">
+												<div class="aljam__list-info-item">
+													<div class="aljam__info-tit">6개월 아기 낮잠과 밤잠</div>
+												</div>
+												<div class="aljam__list-info-item">
+													<span class="aljam__info-id">둥이맘</span>
+													<span class="aljam__info-time">4시간 전</span>
+													<span class="aljam__info-view">350</span>
+													<span class="aljam__info-comment">20</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="community-detail.html">
+											<div class="aljam__list-info">
+												<div class="aljam__list-info-item">
+													<div class="aljam__info-tit">안먹고 계속 자는데 괜찮을까요?</div>
+												</div>
+												<div class="aljam__list-info-item">
+													<span class="aljam__info-id">둥이맘</span>
+													<span class="aljam__info-time">4시간 전</span>
+													<span class="aljam__info-view">350</span>
+													<span class="aljam__info-comment">20</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="community-detail.html">
+											<div class="aljam__list-info">
+												<div class="aljam__list-info-item">
+													<div class="aljam__info-tit">울리면서 수면교육 해도 될까요?</div>
+												</div>
+												<div class="aljam__list-info-item">
+													<span class="aljam__info-id">둥이맘</span>
+													<span class="aljam__info-time">4시간 전</span>
+													<span class="aljam__info-view">350</span>
+													<span class="aljam__info-comment">20</span>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>알잠앱 커뮤니티 댓글</title>
+		<meta name="description" content="알잠앱 커뮤니티 댓글">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<!-- Chrome, Firefox, Opera -->
+        <meta name="theme-color" content="#ffffff">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#ffffff">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- 기존 css -->
+		<link href="../css/2023/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/global.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/main.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/community.css" type="text/css" rel="stylesheet">
+		<link href="../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/global.css" type="text/css" rel="stylesheet">
+		<link href="../css/main.css" type="text/css" rel="stylesheet">
+		<link href="../css/pdas.css" type="text/css" rel="stylesheet">
+		<link href="../css/userCss.css" type="text/css" rel="stylesheet">
+		<link href="../css/swiper11-bundle.min.css" type="text/css" rel="stylesheet">
+
+		<!-- new css -->
+		<link href="../css/2025/font.css" type="text/css" rel="stylesheet">
+		<link href="../css/2025/style.css" type="text/css" rel="stylesheet">
+
+		<!-- 기존 js -->
+		<script src="../js/swiper11-bundle.min.js"></script>
+
+		<!-- new js -->
+		<script src="../js/2025/script.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap" class="v30">
+			<!-- aljam: new 알잠앱 전체 영역 -->
+			<div class="aljam">
+				<!-- aljam__inner-fix: 화면 높이에 맞춰 컨텐츠 높이 적용 -->
+				<div class="aljam__inner-fix">
+					<!-- aljam__header: 헤더 영역, margin-none: 헤더 영역에 마진이 없을 경우 -->
+					<header class="aljam__header margin-none">
+						<div class="aljam__header-left">
+							<button type="button" class="aljam__btn-back" onclick="history.back();">
+								<span class="blind">뒤로 이동</span>
+							</button>
+						</div>
+		
+						<h1 class="aljam__header-tit">댓글 (15)</h1>
+					</header>
+
+					<!-- aljam__page: 컨텐츠 영역 -->
+					<section class="aljam__page">		
+						<!-- 20250423 수정사항 Start -->
+						<div class="aljam__box">
+							<!-- aljam__comment: 댓글 영역 -->
+							<div class="aljam__comment">
+								<ul class="aljam__comment-list">
+									<!-- 20250416 수정사항 Start -->
+									<!-- [class]: 답글쓰기 버튼 클릭시 reply-on 클래스 추가 -->
+									<li class="reply-on">
+										<!-- 원본 댓글 영역, [class]: 수정하기 버튼 클릭시 modify-on 클래스 추가 -->
+										<div class="aljam__comment-info">
+											<div class="aljam__comment-info-item">
+												<span class="aljam__info-picture"><img src="../assets/images/2025/img-detail-02.png" alt="사용자 계정 이미지"></span>
+												<span class="aljam__info-id">반짝반짝 작은별</span>
+												<span class="tag-date">125일</span>
+												<span class="aljam__info-time">10분 전</span>
+												<div class="aljam__info-more">
+													<!-- toggleCommentBtn 함수 호출시 더보기 레이어 팝업이 보여지거나 숨겨짐 -->
+													<button type="button" class="aljam__btn-more" onclick="toggleCommentBtn(this);">
+														<span class="blind">더보기</span>
+													</button>
+													<!-- [class]: 해당 레이어 팝업을 보여줄 경우 on 클래스 추가 -->
+													<ul class="aljam__layer-more" role="dialog" aria-modal="true">
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>신고하기</span>
+															</button>
+														</li>
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>차단하기</span>
+															</button>
+														</li>
+														<!-- 아래 수정하기, 삭제하기 버튼은 내가 작성한 글일 경우에만 노출 -->
+														<li>
+															<!-- [class]: 수정하기 버튼일 경우 aljam__btn-modify 클래스 추가, openComment 함수 호출시 자바스크립트에서 댓글 폼을 동적으로 생성함 (두번째 인수: 댓글 인덱스 번호) -->
+															<button type="button" class="aljam__btn-txt aljam__btn-modify" onclick="openComment(this, 1);">
+																<span>수정하기</span>
+															</button>
+														</li>
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>삭제하기</span>
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="aljam__comment-info-item">
+												<div class="aljam__info-desc">첫 낮잠을 10시 전이면 두시간 재워도 된다고 하셨는데 10시 전에 잠이들면 두 시간 낮잠을 재워도 된다는 걸까요? 평소에 솔루션을 주셨을 땐 기상 시간이 늦춰졌었는데 최근에 당겨졌었어요 ㅜㅜ .</div>
+											</div>
+											<div class="aljam__comment-info-item">
+												<div class="aljam__info-etc">
+													<!-- [class]: 답글쓰기 버튼일 경우 aljam__btn-reply 클래스 추가, openReply 함수 호출시 자바스크립트에서 답글 폼을 동적으로 생성함 (두번째 인수: 없음) -->
+													<button type="button" class="aljam__btn-txt aljam__btn-reply" onclick="openReply(this);">
+														<span>답글쓰기</span>
+													</button>
+												</div>
+												<div class="aljam__info-etc">
+													<!-- [class]: 한번 누르면 on 클래스 추가하고 두번 누르면 on 클래스 삭제 -->
+													<button type="button" class="aljam__btn-txt on" onclick="">
+														<span>공감</span>
+														<!-- sympathy-cnt: 공감 횟수로 한번 누르면 +1 적용되고 두번 누르면 원래대로 돌아옴 -->
+														<span class="sympathy-cnt">3</span>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- 댓글의 답글 입력폼 -->
+										<div class="aljam__comment-info">
+											<div class="aljam__comment-info-item">
+												<div class="aljam__replyform">
+													<form id="" name="" method="" action="">
+														<label>
+															<span class="sr-only">답글 등록</span>
+															<textarea id="" name="" rows="1"></textarea>
+														</label>
+														<button type="button" class="aljam__btn-txt" onclick="addReply(this);">
+															<span>등록</span>
+														</button>
+													</form>
+												</div>
+											</div>
+										</div>
+										<!-- 댓글의 답글 영역, [class]: 수정하기 버튼 클릭시 modify-on 클래스 추가 -->
+										<div class="aljam__comment-info">
+											<div class="aljam__comment-info-item">
+												<span class="aljam__info-picture"><img src="../assets/images/2025/img-detail-03.png" alt="사용자 계정 이미지"></span>
+												<span class="aljam__info-id">둥이맘</span>
+												<span class="tag-date">125일</span>
+												<span class="aljam__info-time">5분 전</span>
+												<div class="aljam__info-more">
+													<!-- toggleCommentBtn 함수 호출시 더보기 레이어 팝업이 보여지거나 숨겨짐 -->
+													<button type="button" class="aljam__btn-more" onclick="toggleCommentBtn(this);">
+														<span class="blind">더보기</span>
+													</button>
+													<!-- [class]: 해당 레이어 팝업을 보여줄 경우 on 클래스 추가 -->
+													<ul class="aljam__layer-more" role="dialog" aria-modal="true">
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>신고하기</span>
+															</button>
+														</li>
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>차단하기</span>
+															</button>
+														</li>
+														<!-- 아래 수정하기, 삭제하기 버튼은 내가 작성한 글일 경우에만 노출 -->
+														<li>
+															<!-- [class]: 수정하기 버튼일 경우 aljam__btn-modify 클래스 추가, openReply 함수 호출시 자바스크립트에서 답글 폼을 동적으로 생성함 (두번째 인수: 답글 인덱스 번호) -->
+															<button type="button" class="aljam__btn-txt aljam__btn-modify" onclick="openReply(this, 1);">
+																<span>수정하기</span>
+															</button>
+														</li>
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>삭제하기</span>
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="aljam__comment-info-item">
+												<div class="aljam__info-desc">첫 낮잠을 10시 전이면 두시간 재워도 된다고 하셨는데 10시 전에 잠이들면 두 시간 낮잠을 재워도 된다는 걸까요?</div>
+											</div>
+										</div>
+									</li>
+									<!--// 20250416 수정사항 End -->
+
+									<li>
+										<!-- 원본 댓글 영역, [class]: 수정하기 버튼 클릭시 modify-on 클래스 추가 -->
+										<div class="aljam__comment-info">
+											<div class="aljam__comment-info-item">
+												<span class="aljam__info-picture"><img src="../assets/images/2025/img-detail-02.png" alt="사용자 계정 이미지"></span>
+												<span class="aljam__info-id">반짝반짝 작은별</span>
+												<span class="tag-date">125일</span>
+												<span class="aljam__info-time">10분 전</span>
+												<div class="aljam__info-more">
+													<!-- toggleCommentBtn 함수 호출시 더보기 레이어 팝업이 보여지거나 숨겨짐 -->
+													<button type="button" class="aljam__btn-more" onclick="toggleCommentBtn(this);">
+														<span class="blind">더보기</span>
+													</button>
+													<!-- [class]: 해당 레이어 팝업을 보여줄 경우 on 클래스 추가 -->
+													<ul class="aljam__layer-more" role="dialog" aria-modal="true">
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>신고하기</span>
+															</button>
+														</li>
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>차단하기</span>
+															</button>
+														</li>
+														<!-- 아래 수정하기, 삭제하기 버튼은 내가 작성한 글일 경우에만 노출 -->
+														<li>
+															<!-- [class]: 수정하기 버튼일 경우 aljam__btn-modify 클래스 추가, openComment 함수 호출시 자바스크립트에서 댓글 폼을 동적으로 생성함 (두번째 인수: 댓글 인덱스 번호) -->
+															<button type="button" class="aljam__btn-txt aljam__btn-modify" onclick="openComment(this, 2);">
+																<span>수정하기</span>
+															</button>
+														</li>
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>삭제하기</span>
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="aljam__comment-info-item">
+												<div class="aljam__info-desc">첫 낮잠을 10시 전이면 두시간 재워도 된다고 하셨는데 10시 전에 잠이들면 두 시간 낮잠을 재워도 된다는 걸까요? 평소에 솔루션을 주셨을 땐 기상 시간이 늦춰졌었는데 최근에 당겨졌었어요 ㅜㅜ .</div>
+											</div>
+											<div class="aljam__comment-info-item">
+												<div class="aljam__info-etc">
+													<!-- [class]: 답글쓰기 버튼일 경우 aljam__btn-reply 클래스 추가, openReply 함수 호출시 자바스크립트에서 답글 폼을 동적으로 생성함 (두번째 인수: 없음) -->
+													<button type="button" class="aljam__btn-txt aljam__btn-reply" onclick="openReply(this);">
+														<span>답글쓰기</span>
+													</button>
+												</div>
+												<div class="aljam__info-etc">
+													<!-- [class]: 한번 누르면 on 클래스 추가하고 두번 누르면 on 클래스 삭제 -->
+													<button type="button" class="aljam__btn-txt on" onclick="">
+														<span>공감</span>
+														<!-- sympathy-cnt: 공감 횟수로 한번 누르면 +1 적용되고 두번 누르면 원래대로 돌아옴 -->
+														<span class="sympathy-cnt">3</span>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- 댓글의 답글 영역, [class]: 수정하기 버튼 클릭시 modify-on 클래스 추가 -->
+										<div class="aljam__comment-info">
+											<div class="aljam__comment-info-item">
+												<span class="aljam__info-picture"><img src="../assets/images/2025/img-detail-03.png" alt="사용자 계정 이미지"></span>
+												<span class="aljam__info-id">둥이맘</span>
+												<span class="tag-date">125일</span>
+												<span class="aljam__info-time">5분 전</span>
+												<div class="aljam__info-more">
+													<!-- toggleCommentBtn 함수 호출시 더보기 레이어 팝업이 보여지거나 숨겨짐 -->
+													<button type="button" class="aljam__btn-more" onclick="toggleCommentBtn(this);">
+														<span class="blind">더보기</span>
+													</button>
+													<!-- [class]: 해당 레이어 팝업을 보여줄 경우 on 클래스 추가 -->
+													<ul class="aljam__layer-more" role="dialog" aria-modal="true">
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>신고하기</span>
+															</button>
+														</li>
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>차단하기</span>
+															</button>
+														</li>
+														<!-- 아래 수정하기, 삭제하기 버튼은 내가 작성한 글일 경우에만 노출 -->
+														<li>
+															<!-- [class]: 수정하기 버튼일 경우 aljam__btn-modify 클래스 추가, openReply 함수 호출시 자바스크립트에서 답글 폼을 동적으로 생성함 (두번째 인수: 답글 인덱스 번호) -->
+															<button type="button" class="aljam__btn-txt aljam__btn-modify" onclick="openReply(this, 2);">
+																<span>수정하기</span>
+															</button>
+														</li>
+														<li>
+															<button type="button" class="aljam__btn-txt" onclick="">
+																<span>삭제하기</span>
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="aljam__comment-info-item">
+												<div class="aljam__info-desc">첫 낮잠을 10시 전이면 두시간 재워도 된다고 하셨는데 10시 전에 잠이들면 두 시간 낮잠을 재워도 된다는 걸까요?</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- aljam__comment-fix: 하단에 고정된 댓글 입력폼 영역 -->
+						<div class="aljam__comment-fix">
+							<div class="aljam__commentform">
+								<form id="" name="" method="" action="">
+									<label>
+										<span class="sr-only">댓글 등록</span>
+										<textarea id="" name="" rows="1" placeholder="댓글을 남겨주세요!"></textarea>
+									</label>
+									<button type="button" class="aljam__btn-upload" onclick="addComment(this);">
+										<span class="blind">댓글 등록</span>
+									</button>
+								</form>
+							</div>
+						</div>
+						<!--// 20250423 수정사항 End -->
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
