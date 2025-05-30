@@ -11,8 +11,8 @@ body {
 
 /* 2025 aljam css */
 .aljam .aljam__inner-fix {
-  height: calc(constant(safe-area-inset-bottom) + 100vh);
-  height: calc(env(safe-area-inset-bottom) + 100vh);
+  height: calc(constant(safe-area-inset-bottom) + 100%);
+  height: calc(env(safe-area-inset-bottom) + 100%);
 }
 .aljam .aljam__layer {
   height: calc(constant(safe-area-inset-bottom) + 100% + 1px);
