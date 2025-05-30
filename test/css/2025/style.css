@@ -1130,7 +1130,6 @@
 .aljam .aljam__inner-fix {
   width: 100%;
   height: calc(100vh - 0px);
-  height: calc(var(--vh, 1vh) * 100 - 0px);
   background-color: #ffffff;
   display: -ms-flexbox;
   display: flex;
