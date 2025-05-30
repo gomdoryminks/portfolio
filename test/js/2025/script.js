@@ -25,16 +25,16 @@ window.onload = function() {
     });
 
     //컨텐츠 영역내 스크롤시
-    const scrollObjs = document.querySelectorAll(".aljam__inner-fix .aljam__page, .aljam__box");
-    Array.from(scrollObjs).forEach((scrollObj) => {
-        scrollObj.addEventListener('scroll', function() {
-            if (scrollObj.scrollTop === 0) {
-                scrollObj.style.overscrollBehaviorY = 'auto';
-            } else {
-                scrollObj.style.overscrollBehaviorY = 'none';
-            }
-        });
-    });
+    // const scrollObjs = document.querySelectorAll(".aljam__inner-fix .aljam__page, .aljam__box");
+    // Array.from(scrollObjs).forEach((scrollObj) => {
+    //     scrollObj.addEventListener('scroll', function() {
+    //         if (scrollObj.scrollTop === 0) {
+    //             scrollObj.style.overscrollBehaviorY = 'auto';
+    //         } else {
+    //             scrollObj.style.overscrollBehaviorY = 'none';
+    //         }
+    //     });
+    // });
 
     //리스트 검색 swiper 슬라이드
     const searchListObjs = document.querySelectorAll(".aljam__searchlist");
