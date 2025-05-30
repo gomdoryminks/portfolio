@@ -1,0 +1,200 @@
+nav > ul.fnb{z-index: 2;position: fixed;bottom:0; width:100%; height:50px;background: #fff;border-top: 1px solid rgb(241, 241, 241);padding:6px 10px;display: flex;justify-content:space-between;align-items: center;box-shadow: 0px -1px 6px 0px rgba(110, 110, 110, 0.1);}
+nav > ul > li{width:25%;height: 100%;text-align: center;}
+nav > ul > li>a{width: 100%;height: 100%;display: block;color:#999; font-size: 12px;line-height: 64px;}
+nav > ul > li:first-child>a{background: url(http://alzam-test.babysleep.co.kr/svg/coffee-outline.svg?size=24&color=888888) center top no-repeat;}
+nav > ul > li:nth-child(3)>a{background: var(--primary) url(http://alzam-test.babysleep.co.kr/images/ico-pencil.svg) center 10px no-repeat;border-radius: 100%;border:4px solid #fff; width:50px;height:50px;margin:-16px auto 0;box-shadow: 0px -5px 3px 0px rgba(110, 110, 110, 0.1);}
+nav > ul > li:nth-child(6)>a{background: url(http://alzam-test.babysleep.co.kr/svg/book-open-outline.svg?size=24&color=888888) center top no-repeat;}
+nav > ul > li:nth-child(4)>a{background: url(http://alzam-test.babysleep.co.kr/svg/book-account-outline.svg?size=24&color=888888) center top no-repeat;}
+nav > ul > li:nth-child(4)>a{background: url(../images/m-ico.png) center top no-repeat;background-size: 25px;}
+nav > ul > li:nth-child(2)>a{background: url(http://alzam-test.babysleep.co.kr/svg/file-document-edit-outline.svg?size=24&color=888888) center top no-repeat;}
+
+
+.hashtag li{font-size: 12px; color:var(--grayText); display: inline-block; background: var(--line);border-radius: 20px;padding:1px 8px;margin:4px 2px;}
+
+/* main swiper */
+.dataInput__wrap {width: 100%;padding:6px 30px 6px 10px!important;}
+.dataInput__wrap .swiper-slide {text-align: center;padding: 0px 1px 2px;background: #fff;border-radius: 4px;box-shadow: 0px 1px 3px #00000019;}
+.behavior-icon.bmilk{background: url(http://alzam-test.babysleep.co.kr/svg/mother-nurse.svg?size=34&color=FE9698) center bottom no-repeat;background-size: contain!important;}
+.behavior-icon.powdermilk{background: url(http://alzam-test.babysleep.co.kr/svg/baby-bottle.svg?size=34&color=f46b7b) center bottom no-repeat;background-size: 94%!important;}
+
+.behavior-icon.baby-food{background: url(http://alzam-test.babysleep.co.kr/images/ico03.svg) center bottom no-repeat}
+.behavior-icon.sleep{background: url(http://alzam-test.babysleep.co.kr/images/ico04.svg) center bottom no-repeat}
+.behavior-icon.diaper{background: url(http://alzam-test.babysleep.co.kr/svg/human-baby-changing-table.svg?size=34&color=FFD945) center bottom no-repeat;background-size: contain!important;}
+.behavior-icon.play{background: url(http://alzam-test.babysleep.co.kr/svg/duck.svg?size=34&color=9BDB5E) center bottom no-repeat;background-size: contain!important;}
+.behavior-icon.sleep-cons{background: url(http://alzam-test.babysleep.co.kr/svg/weather-night.svg?size=348&color=00E8C1) center bottom no-repeat;background-size: contain!important;}
+.behavior-icon.medicine{background: url(http://alzam-test.babysleep.co.kr/svg/medical-bag.svg?size=34&color=F891EA) center bottom no-repeat;background-size: contain!important;}
+.dataInput__wrap .swiper-slide .behavior-icon{background-size: 83%!important;width:30px;height: 28px;margin:4px auto 2px;}
+.dataInput__wrap .swiper-slide>h2{font-size:12px;}
+
+.main_input_wrap {height: 100vh;}
+.main_input_wrap .head{position: relative;background: var(--primary);border-radius: 8px;color:#fff;font-size: 13px;padding:8px 12px;margin:8px 8px 0}
+.head_profile{position: relative;width:50%;padding-left: 50px;color: #fff;margin: 0 auto;}
+.head_profile .profile{position: absolute;left: 0;top:0;}
+.head_profile h2{font-size: 16px;display: block;}
+.head_profile>.profile{width: 42px;height:42px;}
+.head_profile>.profile>img{width: 100%;height: 100%; border-radius: 100%;}
+.head .left_ico>a{position: absolute;left: 10px;top:6px;width:40px;height:40px;display: inline-block;text-indent: -99999px;}
+.head .right_ico>a{position: absolute;top:6px;width:40px;height:40px;display: inline-block;text-indent: -99999px;}
+.head .left_ico>.myalzam{background: url(http://alzam-test.babysleep.co.kr/svg/account-cog.svg?size=30&color=ffffff) center no-repeat;}
+.head .left_ico>.menu{background: url(http://alzam-test.babysleep.co.kr/svg/menu.svg?size=30&color=ffffff) center no-repeat;}
+.head .right_ico>.sound{right:42px;background: url(http://alzam-test.babysleep.co.kr/svg/applemusic.svg?size=24&color=ffffff) center no-repeat;}
+.head .right_ico>.moreBtn{right:6px;background: url(http://alzam-test.babysleep.co.kr/svg/cog.svg?size=26&color=ffffff) center no-repeat;}
+
+.baby-info{display: flex;justify-content: space-between;align-items: center; background: var(--primary);border-radius: 8px;color:#fff;font-size: 12px;padding:8px 16px;margin:0 10px}
+.baby-info>.day{font-size: 14px;}
+.baby-info>.profile{width: 45px;height:45px;}
+.baby-info>.profile>img{width: 100%;height: 100%; border-radius: 100%;}
+.baby-info>.point>span{font-size: 18px;font-weight:bold;display: block;}
+.baby-info>.link a{display: block;}
+.baby-info>.link a:before{content: '';vertical-align: middle;display: inline-block;width: 20px;height: 16px;background: url(https://icongr.am/material/arrow-right-drop-circle.svg?size=16&color=ffffff) left center no-repeat;}
+
+.moreBtn111{position: absolute;right: 0px;bottom:-4px;background: url(http://alzam-test.babysleep.co.kr/images/ico-3dots.svg) right center no-repeat;background-size: 16px;width:30px;height: 24px;text-indent: -99999px;}
+#more-BTN-Layer {z-index: 2;position: absolute;right: 0px;width:200px; margin-top: 6px;padding:0px;background:#fff;border:1px solid var(--lightline);border-radius: 6px;}
+#more-BTN-Layer a {display: block;font-size: 15px;color: #333;padding:11px 40px 11px 20px;border-bottom: 1px solid var(--lightline);}
+
+.next_box{display: flex;justify-content: space-between;align-items: baseline; margin:14px 10px 4px}
+.next_box>h2{width:80px;font-size: 14px;color:var(--primary);font-weight: bold;}
+.next_box>.date{font-size: 16px;font-weight: bold;}
+.next_box>.date>a.pre,
+.next_box>.date>a.next{opacity: .4;background-size: 7px!important;display: inline-block;width: 30px;height: 20px;vertical-align: middle;}
+.next_box>.date>.pre{background:url(http://alzam-test.babysleep.co.kr/images/ico-arrow-left.svg) center no-repeat;}
+.next_box>.date>.next{background:url(http://alzam-test.babysleep.co.kr/images/ico-arrow-right.svg) center no-repeat;}
+.next_box>.timetable{font-weight: bold;font-size:13px;color:#fff;padding:3px 8px 3px 24px;border-radius: 4px; background:#3eceb5 url(https://icongr.am/clarity/alarm-clock.svg?size=16&color=ffffff) 5px center no-repeat;}
+.data_input_wrap .next_box>.date{width: 100%; text-align: center;}
+
+
+.next-time{padding:0 50px 0 10px!important}
+.next-time a{display: block;background-color: #fff;border:1px solid var(--lightline);border-radius: 4px; padding:10px 12px 8px;margin-bottom:6px; color:var(--grayText)}
+.next-time h2>strong{color: #333;font-size: 16px;font-weight: bold;margin-right: 10px;}
+.next-time .behavior-icon{width: 24px;height: 24px;margin-right: 0px; display: inline-block;vertical-align: middle; background-size: contain;}
+
+.date_input{height: 100%;background: var(--lightPink);padding: 10px 0;}
+.date_input .last-info{display: flex;justify-content: center;align-items: center;text-align: center; border-radius:4px;background:#fff;padding:8px 10px;margin: 0 10px;}
+.date_input .last-info dl {border-right: 1px solid var(--lightline);padding:0 14px}
+.date_input .last-info dl:last-child {border-right: 0px;padding-right: 0;}
+.date_input .last-info dl:first-child {padding-left: 0;}
+.date_input .last-info dl>dt{font-size: 12px;color:var(--grayText)}
+.date_input .last-info dl>dd{font-size: 15px;font-weight: bold;}
+
+.data-input-list{padding:0 10px 65px;/*max-height: 220px;*/overflow: auto;background: var(--lightPink);}
+.data-input-list a{display: block;background-color: #fff;border-radius: 4px; padding:10px 16px;margin-bottom:6px; font-size: 12px;color:var(--grayText)}
+.data-input-list .title{width:90px;padding-top: 6px; display: inline-block;vertical-align: top;}
+.data-input-list .detail{width:auto; display: inline-block;}
+.data-input-list .detail>strong{font-size: 14px;display: block;}
+.data-input-list a .title:before {content:'';display: inline-block;vertical-align: middle;margin-right: 4px;width: 28px;height: 28px;border-radius: 100%;}
+.data-bmilk > .title:before {background:var(--b-milk) url(https://icongr.am/material/mother-nurse.svg?size=20&color=ffffff) center no-repeat;}
+.data-bmilk .detail>strong{color: var(--b-milk);}
+.data-powdermilk > .title:before {background:var(--powder-milk) url(https://icongr.am/material/baby-bottle.svg?size=20&color=ffffff) center no-repeat;}
+.data-powdermilk .detail>strong{color: var(--powder-milk);}
+.data-baby-food > .title:before {background:var(--baby-food) url(http://alzam-test.babysleep.co.kr/images/ico03-white.svg) center no-repeat;background-size: 57%;}
+.data-baby-food .detail>strong{color: var(--baby-food);}
+.data-sleep > .title:before {background:var(--sleep) url(http://alzam-test.babysleep.co.kr/images/ico04-white.svg) center no-repeat;background-size: 18px!important;}
+.data-sleep .detail>strong{color: var(--sleep);}
+.data-diaper > .title:before {background:var(--diaper) url(https://icongr.am/material/human-baby-changing-table.svg?size=20&color=ffffff) center no-repeat;}
+.data-diaper .detail>strong{color: var(--diaper);}
+.data-play > .title:before {background:var(--play) url(https://icongr.am/material/duck.svg?size=20&color=ffffff) center no-repeat;}
+.data-play .detail>strong{color: var(--play);}
+.data-sleep-cons > .title:before {background:var(--sleep-cons) url(https://icongr.am/material/weather-night.svg?size=20&color=ffffff) center no-repeat;}
+.data-sleep-cons .detail>strong{color: var(--sleep-cons);}
+.data-medicine > .title:before {background:var(--medicine) url(https://icongr.am/material/medical-bag.svg?size=20&color=ffffff) center no-repeat;}
+.data-medicine .detail>strong{color: var(--medicine);}
+.date-devide{font-size: 12px; text-align: center;padding:4px 0 6px;color: var(--primary);}
+#wrap.dateinput-baby-food #header.pink{background:var(--baby-food)}
+.dateinput-baby-food .btn_segment .btn-small.selected{background-color:var(--baby-food)}
+.dateinput-baby-food .btn_segment .btn-small{color: var(--baby-food);border-color: var(--baby-food);}
+.dateinput-baby-food .layer__ft-btn>button:last-child{background:var(--baby-food)!important}
+#wrap.dateinput-medicine #header.pink{background:var(--medicine)}
+.dateinput-medicine .btn_segment .btn-small.selected{background-color:var(--medicine)}
+.dateinput-medicine .btn_segment .btn-small{color: var(--medicine);border-color: var(--medicine);}
+.dateinput-medicine .layer__ft-btn>button:last-child{background:var(--medicine)!important}
+#wrap.dateinput-bmilk #header.pink{background:var(--b-milk)}
+.dateinput-bmilk .btn_segment .btn-small.selected{background-color:var(--b-milk)}
+.dateinput-bmilk .btn_segment .btn-small{color: var(--b-milk);border-color: var(--b-milk);}
+.dateinput-bmilk .layer__ft-btn>button:last-child{background:var(--b-milk)!important}
+#wrap.dateinput-powdermilk #header.pink{background:var(--powder-milk)}
+.dateinput-powdermilk .btn_segment .btn-small.selected{background-color:var(--powder-milk)}
+.dateinput-powdermilk .btn_segment .btn-small{color: var(--powder-milk);border-color: var(--powder-milk);}
+.dateinput-powdermilk .layer__ft-btn>button:last-child{background:var(--powder-milk)!important}
+#wrap.dateinput-sleep #header.pink{background:var(--sleep)}
+.dateinput-sleep .btn_segment .btn-small.selected{background-color:var(--sleep)}
+.dateinput-sleep .btn_segment .btn-small{color: var(--sleep);border-color: var(--sleep);}
+.dateinput-sleep .layer__ft-btn>button:last-child{background:var(--sleep)!important}
+#wrap.dateinput-diaper #header.pink{background:var(--diaper)}
+.dateinput-diaper .btn_segment .btn-small.selected{background-color:var(--diaper)}
+.dateinput-diaper .btn_segment .btn-small{color: var(--diaper);border-color: var(--diaper);}
+.dateinput-diaper .layer__ft-btn>button:last-child{background:var(--diaper)!important}
+#wrap.dateinput-sleep-cons #header.pink{background:var(--sleep-cons)}
+.dateinput-sleep-cons .btn_segment .btn-small.selected{background-color:var(--sleep-cons)}
+.dateinput-sleep-cons .btn_segment .btn-small{color: var(--sleep-cons);border-color: var(--sleep-cons);}
+.dateinput-sleep-cons .layer__ft-btn>button:last-child{background:var(--sleep-cons)!important}
+#wrap.dateinput-play #header.pink{background:var(--play)}
+.dateinput-play .btn_segment .btn-small.selected{background-color:var(--play)}
+.dateinput-play .btn_segment .btn-small{color: var(--play);border-color: var(--play);}
+.dateinput-play .layer__ft-btn>button:last-child{background:var(--play)!important}
+
+.time-add .selected{color: #fff;border: 0;}
+#wrap.dateinput-bmilk .time-add .selected{background: var(--b-milk);}
+#wrap.dateinput-powdermilk .time-add .selected{background: var(--powder-milk);}
+#wrap.dateinput-sleep .time-add .selected{background: var(--sleep);}
+#wrap.dateinput-diaper .time-add .selected{background: var(--diaper);}
+#wrap.dateinput-sleep-cons .time-add .selected{background: var(--sleep-cons);}
+#wrap.dateinput-play .time-add .selected{background: var(--play);}
+#wrap.dateinput-baby-food .time-add .selected{background: var(--baby-food);}
+#wrap.dateinput-medicine .time-add .selected{background:var(--medicine)}
+
+#wrap.dateinput-medicine .date_input{height:auto; background-color: #fff;border:1px solid var(--medicine);border-radius: 4px; padding:0;margin: 10px 20px;}
+#wrap.dateinput-medicine .date_input .last-info{margin: 8px 2px;padding: 8px 10px;}
+
+.time-input-list{position: relative; overflow-x: hidden;padding:0 10px 60px;background: var(--lightPink);font-size: 12px;color:#fff; min-height: 300px;overflow: auto; display: flex;justify-content: space-between;align-items: flex-start;}
+.time-input-list>.recomm-time {position: relative;width:90px;display: table;}
+.time-input-list>.recomm-time div {position: absolute;left:0; border-radius:4px;width:100%;margin-bottom: 1px;padding:0 1px;display: flex;justify-content:center;align-items: center;}
+.time-input-list>.time {position: relative;text-align: center; border-radius:4px;width:90px;margin:0 6px; background-color: #fff;color: #999;font-size: 13px;}
+.time-input-list>.time li {height:60px;margin-bottom: 0px;}
+.time-input-list .time-line{z-index:1;position: absolute;left:0px; display:inline-block;width:100%;height: 26px;}
+.time-input-list .time-line::before{content: '';margin: 0px 0 0px 0px;display: inline-block;width:100%;}
+.time-input-list .time-line.now::before{border-bottom: 1px solid #f46b7b;}
+.time-input-list .time-line.wakeup::before{border-bottom: 1px solid #FF7276;}
+.time-input-list .time-line.wakeup>span{position: absolute;top: 0;left:0;width:26px;height:26px;display: inline-block;border-radius: 100%; background:var(--primary) url(https://icongr.am/material/white-balance-sunny.svg?size=18&color=ffffff) center no-repeat;}
+.time-input-list .time-line.sleep>span{position: absolute;top: 0;left:0;width:26px;height:26px;display: inline-block;border-radius: 100%; background:#8a87f0 url(https://icongr.am/material/weather-night.svg?size=18&color=ffffff) center no-repeat;}
+
+.time-input-list .time-line.sleep::before{border-bottom: 1px solid #706cff;}
+.time-input-list .time-line.now>span{position: absolute;top:0;left:0; background:#f46b7b;color:#fff; width:60px;text-align:center;border-radius: 4px;}
+.time-input-list>.baby-time{position: relative;width:100%}
+.time-input-list>.baby-time div {width:100%;margin-bottom: 1px;}
+.time-input-list>.baby-time div span {z-index: 1;position: absolute;border-radius:3px;text-align: center;display: flex;align-items: center;justify-content: center;}
+.time-input-list>.baby-time div span:first-child{left:0;}
+.time-input-list>.baby-time div span:last-child{right:0;}
+.viewType {margin-bottom: 5px; font-size: 12px;width:100%;display: block; text-align: center;}
+.viewType>.type {display: block;}
+.viewType>.type:before {content: '';vertical-align: middle;width:20px;height:20px;display: inline-block; background: url(https://icongr.am/material/arrow-down-drop-circle.svg?size=18&color=999999) left center no-repeat}
+.viewType>.type.up:before {background: url(https://icongr.am/material/arrow-up-drop-circle.svg?size=18&color=999999) left center no-repeat}
+.viewType .detail {margin:2px 10px;padding:4px 0; background:#fff;font-weight: bold;color:#999}
+.data-input-list .viewType .detail{margin:2px 0px;width:100%;background-color: unset;}
+
+.data_input_wrap{display: block; padding:0 0 0px;height: 100vh;}
+.btn-time{min-width: 100px; box-shadow: 0px 2px 4px 1px #F3E3E3;display: inline-block;font-size: 20px;font-weight: bold; border-radius: 4px;padding: 12px 20px;color:var(--primary);margin: 4px auto 10px; background:var(--lightPink);}
+.btn-time input[type='number']{width:70% !important;color: var(--primary);font-size: 20px;background: transparent;border:0; border-bottom: 1px solid var(--primary);}
+.time-add{display: flex;justify-content: center;}
+.time-add li>button{border-radius: 4px;border:1px solid #ddd;margin: 0 2px; padding:10px 7px;font-weight: bold;background:#fff;font-size:13px}
+.data_input_wrap .step01{position: relative; padding:0 10px 10px;text-align: center;}
+.time-setting{}
+.time-setting .end{font-size: 15px;}
+.time-setting span{padding:0 10px; font-size: 16px;}
+
+.btn-data{background:var(--gray);color: #fff;}
+.time-add.four li>button{padding: 10px 22px;}
+.data_input_wrap .step01 h2{position: absolute;left: 14px;top:20px;font-weight: bold;}
+.time-add.f-wrap{flex-wrap: wrap;justify-content: flex-start;}
+.time-add.f-wrap li>button{margin-right:4px;}
+
+.ico-memo{background: #000;width: 20px!important;top: 0; right: 0;left: unset!important;border-radius: 100%;opacity: .4;}
+#wrap.darkmode {background:#222327}
+.darkmode .line_box{background:#33353c; color:#fff;opacity: .8;padding: 0px 16px}
+.darkmode .btn-time{margin:0 auto;padding: 33px 20px;font-size: 30px;box-shadow:none;background:url(http://alzam-test.babysleep.co.kr/images/skybg.jpeg) center no-repeat;background-size: cover;height: 120px;width: 99%;}
+
+.darkmode .layer__back{background:#222327;color: #fff;}
+.darkmode .layer__ft-btn>button{color:#222327}
+.darkmode button.close{background: url(http://alzam-test.babysleep.co.kr/images/ico-close-white.svg) #222327 right top no-repeat;}
+.darkmode .titleA{color:#fff; font-size: 18px;line-height: 40px;padding-left:24px;background: url(https://icongr.am/material/playlist-music.svg?size=17&color=ffffff) left center no-repeat}
+.darkmode .data_input_wrap {height:100%;}
+.darkmode .desc{color:#fff; font-size: 12px;line-height: 20px;padding-left:5px;padding-right:5px;}
