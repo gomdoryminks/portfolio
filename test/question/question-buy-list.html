@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>알잠앱 육아질문 구매내역</title>
+		<meta name="description" content="알잠앱 육아질문 구매내역">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<!-- Chrome, Firefox, Opera -->
+        <meta name="theme-color" content="#ffffff">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#ffffff">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- 기존 css -->
+		<link href="../css/2023/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/global.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/main.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/community.css" type="text/css" rel="stylesheet">
+		<link href="../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/global.css" type="text/css" rel="stylesheet">
+		<link href="../css/main.css" type="text/css" rel="stylesheet">
+		<link href="../css/pdas.css" type="text/css" rel="stylesheet">
+		<link href="../css/userCss.css" type="text/css" rel="stylesheet">
+		<link href="../css/swiper11-bundle.min.css" type="text/css" rel="stylesheet">
+
+		<!-- new css -->
+		<link href="../css/2025/font.css" type="text/css" rel="stylesheet">
+		<link href="../css/2025/style.css" type="text/css" rel="stylesheet">
+
+		<!-- 기존 js -->
+		<script src="../js/swiper11-bundle.min.js"></script>
+
+		<!-- new js -->
+		<script src="../js/2025/script.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap" class="v30">
+			<!-- aljam: new 알잠앱 전체 영역 -->
+			<div class="aljam">
+				<!-- aljam__inner-fix: 화면 높이에 맞춰 컨텐츠 높이 적용 -->
+				<div class="aljam__inner-fix">
+					<!-- aljam__header: 헤더 영역, margin-none: 헤더 영역에 마진이 없을 경우 -->
+					<header class="aljam__header margin-none">	
+						<div class="aljam__header-left">
+							<button type="button" class="aljam__btn-back" onclick="history.back();">
+								<span class="blind">뒤로 이동</span>
+							</button>
+						</div>
+						
+						<h1 class="aljam__header-tit">질문권 구매 내역</h1>
+					</header>
+
+					<!-- aljam__page: 컨텐츠 영역 -->
+					<section class="aljam__page">		
+						<div class="aljam__box">
+							<!-- aljam__question-buy: 육아질문 구매내역 영역 -->
+							<div class="aljam__question-buy">
+								<div class="aljam__question-main">
+									<div class="aljam__question-img">
+										<img src="../assets/images/2025/img-question-02.svg" alt="육아질문 구매내역 이미지">
+									</div>
+									<div class="aljam__question-txt">
+										질문에 대한 답은<br>
+										2영업일 이내에 드리도록 노력하겠습니다.<br>
+										<span>(질문권은 구매 후 바로 사용 가능)</span>
+									</div>
+								</div>
+								<ul class="aljam__question-buy-list">
+									<!-- 20250424 수정사항 Start -->
+									<li>
+										<span class="tag-state05">사용중</span>
+										<div class="buy-txt">
+											<div class="buy-name">10회권<span>(1회차 사용)</span></div>
+											<div class="buy-date">구매 일시 : 2025-03-25</div>
+										</div>
+										<!-- [controls]: 레이어 팝업 아이디 설정, openLayer 함수 호출시 레이어 팝업 아이디를 파라미터로 전달 -->
+										<a href="javascript:void(0);" class="buy-btn" aria-haspopup="dialog" controls="questionRefundLayer" onclick="openLayer('questionRefundLayer');">내역보기 &gt;</a>
+									</li>
+									<li>
+										<span class="tag-state03">미사용</span>
+										<div class="buy-txt">
+											<div class="buy-name">1회권</div>
+											<div class="buy-date">구매 일시 : 2025-03-25</div>
+										</div>
+										<a href="question-write.html" class="buy-btn">질문하기 &gt;</a>
+									</li>
+									<li>
+										<span class="tag-state06">환불완료</span>
+										<div class="buy-txt">
+											<div class="buy-name">1회권</div>
+											<div class="buy-date">환불 일시 : 2025-03-25</div>
+										</div>
+									</li>
+									<li>
+										<span class="tag-state04">사용완료</span>
+										<div class="buy-txt">
+											<div class="buy-date">구매 일시 : 2025-03-25<span>사용 일시 : 2025-03-22 10:25:10</span></div>
+										</div>
+										<a href="question-detail.html" class="buy-btn">답변보기 &gt;</a>
+									</li>
+									<!--// 20250424 수정사항 End -->
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<!-- 20250424 수정사항 Start -->
+				<!-- aljam__layer: 레이어 팝업 영역 -->
+				<div id="questionRefundLayer" class="aljam__layer" role="dialog" aria-modal="true">
+					<div class="aljam__layer-box">
+						<div class="aljam__layer-top">
+							<div class="aljam__layer-tit">환불안내</div>
+						</div>
+						<div class="aljam__layer-main">
+							<div class="aljam__layer-txt">
+								육아질문 다회권(5회, 10회)의 경우, 일부 사용 내역이 있을 시에는 회원이 서비스 이용으로부터 얻은 이익에 해당하는 금액 (기 이용 질문횟수 X 개별 질문권 대금) 을 공제한 잔여 금액이 환불됩니다. 이 때, 환불액 산정 기준이 되는 질문권은 할인이 적용되지 않은 개별 질문권 정액요금이 됨을 다시 한 번 안내 드립니다.<br><br>
+								현재 선택하신 질문권의 경우 총 10회 중 7회 질문권이 사용되어 총액 31,200원에서 질문권 7회분 (1회 3,900원) 27,300원 차감 후 <span class="txt-red">3,900원</span>이 환불 예정입니다. 환불 진행 하시겠습니까?
+							</div>
+						</div>
+						<div class="aljam__layer-btn">
+							<button type="button" class="aljam__btn-round-full05" onclick="closeLayer(this);">
+								<span>취소</span>
+							</button>
+							<button type="button" class="aljam__btn-round-line03" onclick="">
+								<span>환불신청</span>
+							</button>
+						</div>
+					</div>
+					<div class="aljam__layer-mask"></div>
+				</div>
+				<!--// 20250424 수정사항 End -->
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>알잠앱 육아질문 작성</title>
+		<meta name="description" content="알잠앱 육아질문 작성">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<!-- Chrome, Firefox, Opera -->
+        <meta name="theme-color" content="#ffffff">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#ffffff">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- 기존 css -->
+		<link href="../css/2023/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/global.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/main.css" type="text/css" rel="stylesheet">
+		<link href="../css/2023/community.css" type="text/css" rel="stylesheet">
+		<link href="../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/global.css" type="text/css" rel="stylesheet">
+		<link href="../css/main.css" type="text/css" rel="stylesheet">
+		<link href="../css/pdas.css" type="text/css" rel="stylesheet">
+		<link href="../css/userCss.css" type="text/css" rel="stylesheet">
+		<link href="../css/swiper11-bundle.min.css" type="text/css" rel="stylesheet">
+
+		<!-- new css -->
+		<link href="../css/2025/font.css" type="text/css" rel="stylesheet">
+		<link href="../css/2025/style.css" type="text/css" rel="stylesheet">
+
+		<!-- 기존 js -->
+		<script src="../js/swiper11-bundle.min.js"></script>
+
+		<!-- new js -->
+		<script src="../js/2025/script.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap" class="v30">
+			<!-- aljam: new 알잠앱 전체 영역 -->
+			<div class="aljam">
+				<!-- aljam__inner-fix: 화면 높이에 맞춰 컨텐츠 높이 적용 -->
+				<div class="aljam__inner-fix">
+					<!-- aljam__header: 헤더 영역, margin-none: 헤더 영역에 마진이 없을 경우 -->
+					<header class="aljam__header margin-none">
+						<div class="aljam__header-left">
+							<button type="button" class="aljam__btn-back" onclick="history.back();">
+								<span class="blind">뒤로 이동</span>
+							</button>
+						</div>
+
+						<h1 class="aljam__header-tit">육아질문하기</h1>
+					</header>
+
+					<!-- aljam__page: 컨텐츠 영역, aljam__page-question: 육아질문 컨텐츠일 경우 -->
+					<section class="aljam__page aljam__page-question">		
+						<div class="aljam__box">
+							<!-- aljam__write: 작성 영역 -->
+							<div class="aljam__write">
+								<form id="" name="" method="" action="">
+									<div class="aljam__write-main">
+										<div class="aljam__write-img">
+											<img src="../assets/images/2025/img-question-03.svg" alt="육아질문 작성 이미지">
+										</div>
+										<div class="aljam__write-txt">
+											육아 질문을 작성하시고<br>
+											무료로 알잠 전문가의 답변을 받으세요.<br>
+											<span>
+												· 구독시 1일 1회 (비구독시 1주일 1회)만 등록 가능<br>
+												· 질문권 개별 구매 가능
+											</span>
+										</div>
+									</div>
+									<ul class="aljam__write-list">
+										<!-- center-align: 항목이 중간 정렬되도록 설정 -->
+										<li class="center-align">
+											<div class="aljam__selectbox">
+												<label for="question-type" class="sr-only">질문 카테고리</label>
+												<!-- [id]: label 태그의 for 속성과 동일하게 설정 -->
+												<select id="question-type" name="">
+													<option value="">질문 카테고리</option>
+												</select>
+											</div>
+										</li>
+										<li>
+											<div class="aljam__formbox">
+												<label for="question-title">제목</label>
+												<!-- [id]: label 태그의 for 속성과 동일하게 설정 -->
+												<input type="text" id="question-title" name="" placeholder="제목을 입력해 주세요">
+											</div>
+										</li>
+										<li>
+											<div class="aljam__textarea">
+												<label for="question-content">내용</label>
+												<!-- [id]: label 태그의 for 속성과 동일하게 설정, [maxlength]: 텍스트 최대 입력수 설정 -->
+												<textarea id="question-content" name="" placeholder="내용을 작성해 주세요 (200자 내외)" maxlength="200"></textarea>
+											</div>
+											<!-- aljam__text-size: 텍스트 크기 설정 (단위: byte), [data-text-id]: 텍스트 크기를 가져올 입력폼의 아이디 설정 -->
+											<div class="aljam__text-size" data-text-id="question-content"><span class="text-size">0</span> / 200 byte</div>
+										</li>
+										<li>
+											<div class="question-txt-big">
+												질문과 함께 상담 선생님께서 검토하면 좋을<br>
+												아기의 하루를 선택해주세요. 
+											</div>
+											<div class="question-txt-small">우리 아기 알잠 생활 데이터 첨부하기 (선택 사항)</div>
+											<div class="aljam__formflex">
+												<div class="aljam__formbox">
+													<label for="question-date" class="sr-only">검토 일자</label>
+													<!-- [id]: label 태그의 for 속성과 동일하게 설정 -->
+													<input type="text" id="question-date" name="" placeholder="년 / 월 / 일">
+												</div>
+												<span class="question-txt-gap">부터</span>
+												<div class="aljam__selectbox">
+													<label for="question-days" class="sr-only">검토 일수</label>
+													<!-- [id]: label 태그의 for 속성과 동일하게 설정 -->
+													<select id="question-days" name="">
+														<option value=""></option>
+													</select>
+												</div>
+												<span class="question-txt-gap">간</span>
+											</div>
+										</li>
+										<li>
+											<div class="question-txt-small">육아질문 등록 전 반드시 확인해 주세요.</div>
+											<ul class="question-txt-list">
+												<li>
+													질문에 대한 답변은 가능한 2영업일 이내 답변을 달아드리도록 노력하겠습니다.<br>
+													다만 질문이 몰릴 선생님들께서 개개인의 맞춤형 질문과 데이터를 검토하는데 소요되는 시간적인 한계가 있어 조금 더 시간이 소요될 수도 있습니다.
+												</li>
+												<li>질문글에 상담 선생님의 답변 등록시 글 삭제가 불가합니다.</li>
+												<li>등록된 상담글은 네이버 카페, 포털 사이트, 마케팅 용도로 개인정보 삭제 후 상담 내용이 공개될 수 있습니다.</li>
+												<li>
+													아래 사항에 해당할 경우, 서비스 이용이 제한될 수 있습니다.<br>
+													1) 개인정보(개인 실명, 전화번호, 주민번호, 주소 등)의 외부 링크가 포함된 경우<br>
+													2) 육아문제 해결을 목적으로 작성한 상담글이 아닌 경우<br>
+													3) 동일/유사한 내용의 질문을 지속적으로 반복 게재하는 경우<br>
+													4) 의미없는 문자의 나열인 경우
+												</li>
+												<li>등록된 무료 육아상담 내역은 회원이름 등 개인정보 삭제 후 앱 내 알잠 커뮤니티에 공개 게시됩니다. (구독자 상담 및 유료 상담 제외)</li>
+											</ul>
+											<div class="aljam__checkbox">
+												<!-- [id]: label 태그의 for 속성과 동일하게 설정 -->
+												<input type="checkbox" id="question-agree" name="">
+												<label for="question-agree">안내사항을 모두 확인했으며, 동의합니다.</label>
+											</div>
+										</li>
+									</ul>
+									<div class="aljam__btn">
+										<button type="button" class="aljam__btn-full02 aljam__btn-write2" onclick="location.href='question-main.html';">
+											<span>육아 질문 등록</span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
