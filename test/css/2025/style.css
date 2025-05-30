@@ -1,3 +1,5 @@
+body { overflow: hidden; }
+
 /* main nav */
 .v30 nav > ul.fnb.menu > li:first-child {
   display: none;
