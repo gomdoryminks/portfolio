@@ -131,7 +131,6 @@
   vertical-align: top;
   resize: none;
   overflow-y: auto;
-  overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -1149,7 +1148,6 @@
 }
 .aljam .aljam__inner-fix .aljam__page {
   overflow-y: auto;
-  overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
 }
 .aljam .aljam__header {
@@ -1346,7 +1344,6 @@
   flex: 1 1 auto;
   padding-top: 20px;
   overflow-y: auto;
-  overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -2751,7 +2748,6 @@
   flex: 1 1 auto;
   padding: 15px 20px;
   overflow-y: auto;
-  overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
