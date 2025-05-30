@@ -1,0 +1,184 @@
+.pediatrics > nav > ul > li:nth-child(3)>a{background: var(--pdas) url(https://icongr.am/material/hospital-building.svg?size=24&color=ffffff) center no-repeat;}
+.pediatrics > nav > ul > li:nth-child(4)>a{background: url(https://icongr.am/material/calendar-heart.svg?size=24&color=888888) center top no-repeat;}
+
+.pediatrics_wrap{transform: rotate(-0.03deg);}
+.search_box{padding: 10px 14px;}
+.search_box > .date{padding: 10px 10px;border-radius: 6px;background-color: #fff;border: 1px solid var(--pdas);text-align: center;}
+.search_box > .date>a{background: url(https://icongr.am/jam/calendar-alt.svg?size=22&color=9e54d5) no-repeat 0px center;font-size: 16px;font-weight: bold; display: block;}
+.diagnosis_wrap{padding:16px 10px 50px;background-color: #f4f4f4;border-top: 1px solid #e1e1e1;}
+.layer__content>.diagnosis_wrap{padding: 0;background-color:#fff;border:0;}
+.layer__content>.diagnosis_wrap .card_info{padding: 20px 14px 14px;background-color: #f4f4f4;}
+.sorting li{display: inline-block;border-radius: 20px;margin:4px 3px 12px 0;background-color: #ebe2f1;}
+.sorting li>a{display: inline-block;padding:3px 16px;color: var(--pdas);}
+.sorting li.selected{background-color:var(--pdas);font-weight: 700;}
+.sorting li.selected>a{color:#fff;}
+.sorting li>a.filter{padding-left: 26px;vertical-align: middle;display: inline-block;background: url(https://icongr.am/clarity/slider.svg?size=16&color=9e54d5) no-repeat 8px center;}
+
+.diagnosis_wrap .card_info{position: relative;display: block; background-color: #fff; border-radius: 10px;padding: 20px 18px 14px;margin-bottom:10px;width:100%;}
+.diagnosis_wrap .card_info.unable{opacity: .5;}
+.card_info>h2{font-size: 20px;font-weight: 750;}
+.card_info>h3{font-size: 16px;font-weight: 650;padding-top: 10px;}
+.card_info>h4{font-size: 14px;}
+.card_info>h4:before{content:'';width:24px;height: 20px;vertical-align: middle;display: inline-block;background: url(https://icongr.am/material/map-marker.svg?size=18&color=9e54d5) no-repeat 0px center;}
+.card_info>h5{font-size: 14px;padding:6px 0 0 0px;}
+.card_info>h5:before{content:'';width:24px;height: 20px;vertical-align: middle;display: inline-block;background: url(https://icongr.am/clarity/alarm-clock.svg?size=18&color=9e54d5) no-repeat 0px center;}
+.card_info>h5>strong{color:var(--primary);display: inline-block;padding:2px 4px;margin: 2px; background-color: var(--lightPink);border-radius: 2px;}
+
+
+.card_info>.thumbs{position: absolute; right: 16px;top:40px;border-radius: 10px;width:74px;height: 74px;object-fit:cover;}
+.diagnosis_item li{font-weight: bold;display: inline-block;border-radius: 4px;background-color:#f4f4f4;padding:4px 10px;margin: 3px 2px 3px 0;min-width:68px;text-align: center;font-size: 13px;}
+.diagnosis_item li.selected{background-color:#fff; border:1px solid var(--pdas) !important;color:var(--pdas);}
+
+.fixed_button {position: fixed;right:10px;bottom:70px}
+.fixed_button a {font-size: 15px;display: block; padding: 10px 10px 10px 46px; width:120px;color: #fff; border-radius:6px;margin-bottom: 8px;box-shadow: 3px 3px 4px 0px rgb(110 110 110 / 30%);}
+.fixed_button a.map{background:var(--pdas) url(https://icongr.am/material/map-search-outline.svg?size=20&color=ffffff) no-repeat 18px center;}
+.fixed_button a.list{background:var(--pdas) url(https://icongr.am/material/badge-account-horizontal-outline.svg?size=20&color=ffffff) no-repeat 18px center;}
+
+.diagnosis_detail .stitle {font-size: 13px;font-weight: bold; color: var(--pdas); border-top: 7px solid #f7f7f7;padding: 20px 18px 10px;margin-top: 20px;}
+.diagnosis_detail .diagnosis_item,
+.diagnosis_detail .hospital_intro{padding:0 18px}
+.diagnosis_title{font-size:15px;font-weight:bold;color:var(--primary);margin: 10px 18px 5px;padding:8px 14px 8px 32px;border-radius: 4px;background:#fcf3f3 url(https://icongr.am/material/medical-bag.svg?size=17&color=FF7276) 10px center no-repeat;}
+.diagnosis_detail .card_info{padding:0 18px}
+.hospital_intro{line-height: 24px;}
+.hospital_thumbs img{object-fit: cover;height: 170px;width: 100%;}
+.hospital_thumbs .swiper-pagination-bullet-active{background-color: var(--pdas);}
+
+.diag_time{background-color: #f4f4f4;border-radius:8px;flex-wrap: wrap;display: flex;}
+.diag_time li{border-bottom: 1px solid #e7e7e7;padding:14px;text-align: center;width: 50%;font-size: 16px;font-weight: bold;}
+.diag_time li:nth-child(1n){border-right: 1px solid #e7e7e7;}
+
+.pediatrics_wrap .cert {margin: 40px 20px;text-align: center;}
+.pediatrics_wrap .cert:before {content:'';width:200px;height: 200px;display: inline-block;background: url(http://alzam-test.babysleep.co.kr/images/cert.png) center no-repeat;background-size: contain;}
+.pediatrics_wrap .cert.card:before {background: url(http://alzam-test.babysleep.co.kr/images/credit-card.png) center no-repeat;background-size: 80%;}
+.pediatrics_wrap .cert>h2 {margin: 20px 0;font-size: 22px;line-height: 30px;}
+.pediatrics_wrap .cert>h3 {color: #999;}
+.pdas_myinfo{padding: 10px 14px;position: relative;}
+.pdas_myinfo>h2{font-size: 20px;font-weight: bold;margin-top: 20px;}
+.pdas_myinfo>h2:after {content:'';position: absolute;right:20px;top:14px; width:80px;height: 70px;vertical-align:middle;display:inline-block;background: url(../images/pdas-myinfo.png) right center no-repeat;background-size: contain;}
+.pdas_myinfo>h3{font-size: 12px;font-weight: normal;color: #999;}
+.base-search h3{color: #999;}
+.indivisual{position: relative; background-color: #f6eefc; border-radius: 8px;padding: 14px 20px;}
+.indivisual>.profile{width: 40px;height: 40px;}
+.indivisual>.info{display: inline-block;padding-left: 16px;vertical-align: middle;line-height: 24px;}
+.indivisual>.info>h2{font-size: 18px;font-weight: bold;}
+.indivisual > .link {position: absolute; right: 16px;bottom: 12px;width: 50px;font-size: 12px;text-align: center;text-decoration: underline;}
+.indivisual > .link::before {content:'';width:40px;height: 26px;display:inline-block;background: url(https://icongr.am/material/account-child-circle.svg?size=28&color=be8be4) center no-repeat;}
+
+.pdas_myinfo .reserv{background-color: #f1f8fd; border-radius: 8px;padding: 14px 20px;}
+.pdas_myinfo .reserv:before{content:'';width:40px;height: 40px;vertical-align: top;display: inline-block;background: url(https://icongr.am/material/account-clock-outline.svg?size=34&color=9e54d5) no-repeat center top;}
+.pdas_myinfo .reserv>div{display:inline-block;vertical-align: middle;padding-left: 16px;line-height: 22px;}
+.pdas_myinfo .reserv .time:before{content:'';width:20px;height: 20px;vertical-align: middle;display: inline-block;background: url(https://icongr.am/clarity/alarm-clock.svg?size=18&color=777777) no-repeat 0px center;}
+.pdas_myinfo .reserv .time{color: var(--pdas);font-weight: bold;}
+.pdas_myinfo .reserv h2{font-size: 18px;font-weight: bold;}
+.pdas_myinfo .base-search .baby{margin-left: 38px;}
+.pdas_myinfo .base-search .baby>.profile{width: 40px;height:  40px;margin-right: 10px;display: inline-block;}
+.pdas_myinfo .base-search .baby>.day{display: inline-block;}
+.pdas_myinfo .base-search .baby>.day > div{font-size: 16px; display: inline-block; padding: 8px 0px;margin: 0 3px;text-align: center; min-width: 80px;}
+.pdas_myinfo .base-search .baby>.day > .name{font-weight: bold;}
+.pdas_myinfo .custom-radio {padding: 14px 10px; background-color: #f6eefc; border-radius: 8px;width: 100%;}
+.pdas_myinfo .custom-radio .radio-checkmark{left: 16px;top: 20px;}
+.pdas_myinfo .base-search li{padding:4px 0}
+.layer__content .pdas_myinfo{padding: 0;}
+
+.diagnosis_history .indivisual {margin: 0 10px;}
+.card_info .status{display: flex;justify-content: space-between;align-items: center; border-top: 1px solid #f4f4f4; padding-top: 14px;margin-top: 10px;color: var(--pdas);font-size: 16px;}
+.card_info .status>a{color: var(--pdas);background-color: #f6eefc;border-radius:20px;padding: 4px 18px;font-weight: bold;font-size: 13px;}
+.card_info .status.cancle{color: #bbb;}
+.diagnosis_info{padding:0 14px;}
+.diagnosis_info dt{width:60px;background-color: #f4f4f4;border-radius: 20px;padding:3px 4px;display: inline-block;color: #999;margin: 4px 0;font-size: 13px;text-align: center;}
+.diagnosis_info dd{padding:3px 10px;display: inline-block;width: 70%;}
+.cate-1{background-color: var(--pdas);color: #fff;border: 0;}
+
+.btn-large.bg-pdas{color: #fff;}
+.bg-pdas {background-color: var(--pdas)!important;}
+.bg-diaper  {background-color: var(--diaper)!important;}
+.cl-pdas {color: var(--pdas);}
+.refer{font-size: 12px;color: #888;}
+.pd20{padding: 0 20px;}
+
+.badge{display: inline-block; border-radius: 18px;border: 1px solid var(--pdas);color: var(--pdas); padding:1px 10px;text-align: center;font-size: 13px;font-weight: bold;}
+.unable > .badge{border: 1px solid #ccc;color: var(--grayText);}
+.select-time select{font-size: 16px; padding: 10px 0 10px 14px;border-color: var(--pdas); background: url(https://icongr.am/clarity/alarm-clock.svg?size=22&color=9e54d5) 10px center no-repeat;text-align: center;font-weight: bold;}
+
+.sympton_wrap{padding: 10px 0px; position: relative; }
+.sympton_wrap h2{font-size: 20px;font-weight: bold;padding: 0 20px;line-height: 26px;}
+.sympton_wrap h2:after {content:'';position: absolute;right:20px;top:24px; width:80px;height: 70px;vertical-align:middle;display:inline-block;background: url(../images/sympton.png) right center no-repeat;background-size: contain;}
+.sympton_wrap h3{font-size: 12px; font-weight: normal; color: #999;padding: 0 20px;}
+.sympton_list{padding: 0px 16px 0;display: flex;align-items: center;flex-wrap: wrap;}
+.sympton_list li{width: 31%;margin: 0 3px;}
+.sympton_list li>a{color: var(--pdas); display: block;font-size: 15px; padding: 10px 1px;text-align: center; background-color: #fff;box-shadow: 1px 3px 6px 0px rgb(0 0 0 / 10%);margin-bottom: 12px;border-radius: 4px;}
+.sympton_list li.selected>a{background-color: var(--pdas);color: #fff;}
+.sympton_wrap > .tbl {padding: 0px 20px 10px;}
+.sympton_wrap > .tbl > .title {text-align: center;background: var(--lightline);padding: 8px 0px; font-size: 15px; font-weight: bold;}
+.sympton_wrap .login_wrap{padding-top: 10px;}
+.photo_attack {padding: 10px 15px;}
+.photo_attack .attack{display: inline-block;vertical-align: middle; background-color: #f4f4f4; border-radius: 8px; width: 50%;height: 70px;text-align: center;margin:2px 2px;}
+.photo_attack .attack:before{content:'';width:40px;height: 70px;display: inline-block;background: url(http://alzam-test.babysleep.co.kr/images/ico-plus.svg) no-repeat center;background-size: 20px;}
+.photo_attack img{object-fit: cover;vertical-align: middle;display: inline-block; border-radius: 8px; width: 23%;height: 70px;margin:2px 2px;}
+
+.pay_wrap {position: relative; transform: rotate(-0.03deg);}
+.pay_wrap .swiper{margin:10px 0 20px;}
+.pay_wrap .swiper-slide {display: block;width: 70%;height: 120px;border-radius: 10px;background: #f4f4f4;padding: 20px;color:#fff;}
+.pay_wrap .swiper-slide h2 {font-size:20px;font-weight: bold;padding-bottom: 20px;}
+.pay_wrap .swiper-slide.samsung {background:rgb(0, 125, 241)}
+.pay_wrap .swiper-slide.lotte {background:rgb(255, 30, 79)}
+.pay_wrap .swiper-slide.kbcard {background:rgb(238, 222, 0)}
+.pay_wrap .swiper-slide.shinhan {background:rgb(0, 4, 221)}
+.pay_wrap .question-box .unit>h2{font-size:18px;padding-bottom: 6px;}
+.pay_wrap .question-box .unit .line-pdas-btn{position: absolute;right: 18px;top:26px;}
+.line-pdas-btn{border: 1px solid var(--pdas);color: var(--pdas);}
+.simple-pay {margin: 6px 0 0 30px;}
+.simple-pay img {width: 30px;vertical-align: middle;padding-right: 5px;}
+
+.layer__back .diagnosis_item li{min-width: 84px;}
+.layer__back.scale-up-center{background: #f4f4f4;width:94%;border: 1px solid #ccc;}
+.sympton_wrap .layer__header>h2{font-size: 1.3em;padding: 0;}
+.sympton_wrap .layer_wrap h2:after{content: none;}
+.sympton_wrap h2.refer{font-size: 13px;font-weight: normal; padding: 0;line-height: unset;}
+.scale-up-center .diagnosis_item li{display: inline-table;background-color: #fff;border: 1px solid #aaa;min-height: 50px;width: 32%;vertical-align: middle;}
+.scale-up-center .diagnosis_item li>a{display: table-cell;vertical-align: middle;line-height: 16px;}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+
+.pdas{color: var(--pdas);}
+.tab_wrap {display: flex; width: 100%;justify-content: space-around;align-items: center;font-size: 16px;}
+.tab_wrap a {width: 50%;text-align: center;padding: 10px;border-bottom: 1px solid #ddd;}
+.tab_wrap a.selected {font-weight: bold; color: var(--pdas);border-bottom: 3px solid var(--pdas);}
+
+.pediatrics_wrap .cert.review:before {background: url(../images/heart.png) center no-repeat;background-size: 80%;}
+
+.review-select .custom-radio {padding: 0px 0px 0 26px;}
+.review-select h2 {padding-top: 24px;font-weight: bold;}
+
+.review_ok{margin: 20px 10px 20px 20px;font-size: 16px;font-weight: bold;}
+.review_step{color:#aaa;margin:10px 0; padding: 20px;border: 1px solid #ddd;background-color: #fff; border-radius: 8px;text-align: center;}
+.review_step>strong{font-size: 22px;padding-left: 10px;}
+.review_step:before {content: '';vertical-align: middle;width:20px;height:20px;display: inline-block; background: url(https://icongr.am/clarity/happy-face.svg?size=20&color=cccccc) left center no-repeat}
+.more_btn {display: block;border-radius: 2px; width: 100%; padding:6px;text-align: center;margin-top: 14px; background-color: #ddd;}
+.more_btn:after {content: '';vertical-align: middle;width:30px;height:20px;display: inline-block; background: url(https://icongr.am/feather/chevron-down.svg?size=18&color=aaaaaa) center no-repeat}
+
+.ico-newreview {display: inline-grid;width: 17px;height: 17px;font-size: 11px;background: var(--red);border-radius: 50%;margin-left: 4px;color: #fff;}
