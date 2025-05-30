@@ -1,0 +1,22 @@
+body {
+  padding: calc(constant(safe-area-inset-top) + 0px) calc(constant(safe-area-inset-right) + 0px) calc(constant(safe-area-inset-bottom) + 0px) calc(constant(safe-area-inset-left) + 0px);
+  padding: calc(env(safe-area-inset-top) + 0px) calc(env(safe-area-inset-right) + 0px) calc(env(safe-area-inset-bottom) + 0px) calc(env(safe-area-inset-left) + 0px);
+}
+
+/* main nav */
+.v30 nav > ul.fnb.menu {
+  height: calc(constant(safe-area-inset-bottom) + 60px);
+  height: calc(env(safe-area-inset-bottom) + 60px);
+}
+
+/* 2025 aljam css */
+.aljam .aljam__inner-fix {
+  height: calc(constant(safe-area-inset-bottom) + 100%);
+  height: calc(env(safe-area-inset-bottom) + 100%);
+}
+.aljam .aljam__layer {
+  height: calc(constant(safe-area-inset-bottom) + 100% + 1px);
+  height: calc(env(safe-area-inset-bottom) + 100% + 1px);
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
