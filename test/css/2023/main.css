@@ -1,0 +1,463 @@
+.v30 nav > ul.fnb.menu{z-index: 2;position: fixed;bottom:0; left: 0;width:100%; height:60px;background: #fff;padding:6px 2px;display: flex;justify-content:space-between;align-items: center;box-shadow: 0px -1px 10px 0px rgba(0,0,0,0.1);}
+.v30 nav > ul.fnb.menu > li{width:25%;height: 100%;text-align: center;}
+.v30 nav > ul.fnb.menu > li>a{width: 100%;height: 100%;display: block;background-size: 28px !important;font-size:11px;padding-top: 30px;line-height: unset;}
+.v30 nav > ul.fnb.menu > li:first-child>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-store.svg) center 3px no-repeat;}
+.v30 nav > ul.fnb.menu > li:nth-child(2)>a{background: url(https://icongr.am/clarity/talk-bubbles.svg?size=18&color=333333) center 3px no-repeat;}
+.v30 nav > ul.fnb.menu > li:nth-child(3)>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-menu03.png) center 3px no-repeat;margin: 0;box-shadow: unset;border: none;}
+.v30 nav > ul.fnb.menu > li:nth-child(4)>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-menu02.gif) center 3px no-repeat;}
+.v30 nav > ul.fnb.menu > li:nth-child(5)>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-menu04.gif) center 3px no-repeat;}
+.v30 nav > ul.fnb.menu > li:nth-child(6)>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-menu05.gif) center 3px no-repeat;}
+
+
+/*풋터메뉴 선택시 디자인 09-25*/
+.v30 nav > ul.fnb.menu > li.selected {color: var(--primary);}
+.v30 nav > ul.fnb.menu > li.selected:first-child>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-store-select.gif) center 3px no-repeat;}
+.v30 nav > ul.fnb.menu > li.selected:nth-child(2)>a{background: url(https://icongr.am/clarity/talk-bubbles.svg?size=18&color=FF7276) center 3px no-repeat;}
+.v30 nav > ul.fnb.menu > li.selected:nth-child(3)>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-menu03-select.png) center 3px no-repeat;}
+.v30 nav > ul.fnb.menu > li.selected:nth-child(4)>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-menu02-select.gif) center 3px no-repeat;}
+.v30 nav > ul.fnb.menu > li.selected:nth-child(5)>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-menu04-select.gif) center 3px no-repeat;}
+.v30 nav > ul.fnb.menu > li.selected:nth-child(6)>a{background: url(http://alzam-test.babysleep.co.kr/images/ico-menu05-select.gif) center 3px no-repeat;}
+
+
+
+/** board list *********/
+.board__list{margin:0px 0px 0}
+.list__type--line{display: block;width:100%;border-bottom: 1px solid var(--bgGray);padding-bottom:10px;margin: 15px 0;}
+.list__type--line:last-child {border-bottom: 0;}
+.list__type--line>a{display: flex;justify-content: space-between;align-items: flex-start;}
+.list__type--line .list__content{width:71%;}
+.list__type--line .list__photo{width: 17%;}
+.list__type--line .list__re{width: 12%;height: 50px; background: var(--bgGray);font-size: 13px;font-weight: bold; text-align: center;padding-top: 8px;border-radius: 6px;}
+.list__type--line .list__re:after{content: '댓글';font-size: 11px;display: block;color: #ccc;line-height: 10px;}
+.list__type--line .list__photo>img{height: 50px;object-fit: cover;}
+.list__photo>img{width: 90%;border-radius: 7px;border: 1px solid var(--borderLine);}
+.list__content>h4{}
+.list__content>h3{line-height: 24px;font-weight: bold;display: block;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.list__content>h5{font-size: 13px;}
+.list__content--info{font-size: .8em;color:#a5a5a5;margin-top:4px}
+.list__content--info > span:after{content: '';padding-right:8px;}
+.list__content--info > span:last-child:after{padding:0;margin:0;border:0}
+.list__info--baby {background: url(https://icongr.am/material/baby-face-outline.svg?size=14&color=a5a5a5) 0 center no-repeat;;padding-left:16px; }
+.list__info--writer {background: url(https://icongr.am/material/account-child-outline.svg?size=18&color=a5a5a5) 0 center no-repeat;;padding-left:20px; }
+.list__info--time {background: url(https://icongr.am/clarity/clock.svg?size=14&color=a5a5a5) 0 center no-repeat; padding-left:16px; }
+.list__info--view {background: url(https://icongr.am/clarity/eye.svg?size=14&color=a5a5a5) 0 center no-repeat; padding-left:16px; }
+.moreviewBtn{display: inline-block;width:100%;text-align: center;padding:0px 0 10px; }
+.moreviewBtn::before{content: '';display: inline-block;width:20px;height: 20px; background: url(http://alzam-test.babysleep.co.kr/images/ico-plus.svg) 0 bottom no-repeat;opacity: .6; background-size: 13px;}
+.list__banner>img{width:100%;background-size: contain; padding:30px 0px;border-radius: var(--border-radius);}
+.list__tab__wrap {background: #fff;width: 100%;margin: 30px 0 20px;border-bottom: 1px solid var(--lightline);overflow-x: auto; -ms-overflow-style: none;scrollbar-width: none;}
+.list__tab__wrap::-webkit-scrollbar {display: none;}
+.list__tab {width: max-content;height: 35px;padding-right: 30px;}
+.list__tab>li {float: left;display: inline-block;margin: 0 22px 0px 0;padding: 0 2px;line-height: 32px;color: var(--grayText);}
+li.current {border-bottom:3px solid var(--primary);color: #333;font-weight: bold;}
+.category {font-size: .9em;color:var(--grayText)}
+
+/* main swiper */
+.slide_progress {width: 100%;height: 100%;padding: 0 0 20px 0 !important;}
+.slide_progress .swiper-slide {padding: 0px;}
+.slide_progress .swiper-slide img {display: block;width: 100%;height: 100%;object-fit: cover;border-radius: 14px;}
+.youtube>h2 {padding-left: 30px;background: url(https://icongr.am/material/youtube.svg?size=28&color=e7161b) 0 center no-repeat;}
+.naver>h2 {padding-left: 30px;background: url(http://alzam-test.babysleep.co.kr/images/logo-naver.png) 0 center no-repeat;background-size: 20px;}
+.video>h2 {padding-left: 30px;background: url(https://icongr.am/material/video-box.svg?size=28&color=FF7276) 0 center no-repeat;}
+.video->h2 {padding-left: 30px;background: url(https://icongr.am/material/video-vintage.svg?size=28&color=FF7276) 0 center no-repeat;}
+
+.slide_progress .swiper-slide h2 {line-height:32px;}
+.slide_progress .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background:var(--primary)}
+.slide_progress .swiper-pagination-progressbar.swiper-pagination-horizontal{bottom: 0;top:unset;}
+.slide_progress .swiper-pagination-progressbar {background: var(--bgGray)}
+
+
+#main.v30 {background-color: var(--bgGray);}
+.main_gnb {position: relative;height: 180px;background:var(--primary) url(http://alzam-test.babysleep.co.kr/images/main_topbg.png) right -16px top 30px no-repeat;background-size: 160px;}
+#main.v30 .baby_profile{padding:62px 20px 20px;display: flex; align-items: center;justify-content: flex-start;}
+#main.v30 .baby_profile>span{width: 70px;height: 70px;margin-right:10px;border-radius: 100%;background: #e54040 url(http://alzam-test.babysleep.co.kr/images/ico-profile-default.png) center no-repeat;background-size: 46px;}
+#main.v30 .baby_profile>span>img {border-radius: 100%;}
+#main.v30 .baby_profile h2{font-size: 18px;font-weight: bold;color:#fff;}
+#main.v30 .baby_profile h2>span{font-size: 24px;padding: 0 6px;}
+#main.v30 .baby_profile h3{font-size: 13px;background: #fff;border-radius: 20px;padding: 2px 10px;margin: 10px 0;}
+
+.card_wrap{position: relative; background: #fff;border-radius: var(--border-radius);box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.05);padding:36px 20px;margin:0 14px;}
+.card_wrap>h2{font-size: 1.3em;font-weight: bold;background-size: 22px !important;padding-left: 34px;margin-bottom: 20px;}
+.card_wrap .roadmap_guide{position: absolute;right: 10px;top:36px;height: 26px;width:40%;background: url(http://alzam-test.babysleep.co.kr/images/roadmap_guide.png) right 0 center no-repeat;background-size: contain;}
+.card_wrap.roadmap{margin-top: -120px;}
+.card_wrap.roadmap>h2{background: url(http://alzam-test.babysleep.co.kr/images/ico-imoji01.gif) 0 center no-repeat;}
+.card_wrap.month>h2:first-child{background: url(http://alzam-test.babysleep.co.kr/images/ico-imoji02.gif) 0 center no-repeat;}
+.card_wrap.month>h2{background: url(http://alzam-test.babysleep.co.kr/images/ico-imoji03.gif) 0 center no-repeat;}
+.card_wrap.month .d-day{position: absolute;top:30px;right:24px;background-color: var(--bgGray);border-radius: 3px;font-size: 16px;padding:4px 14px;color:#555}
+.card_wrap.month .btn {display: block;width: 100%;background: var(--bgGray) url(http://alzam-test.babysleep.co.kr/images/ico-idea.png) 12px center no-repeat;background-size: 30px;border-radius: var(--border-radius);font-size: 17px;padding:17px 20px 14px 50px;}
+.card_wrap.reserve>h2{background: url(http://alzam-test.babysleep.co.kr/images/ico-imoji04.gif) 0 0px no-repeat;line-height: 7px;}
+.card_wrap.guide>h2{background: url(http://alzam-test.babysleep.co.kr/images/ico-imoji05.gif) 0 0px no-repeat;line-height: 33px;}
+.card_wrap.commu>h2{background: url(http://alzam-test.babysleep.co.kr/images/ico-imoji06.gif) 0 center no-repeat;}
+.card_wrap.hotIssue>h2{background: url(http://alzam-test.babysleep.co.kr/images/ico-imoji07.gif) 0 center no-repeat;}
+.card_wrap.routine>h2{background: url(http://alzam-test.babysleep.co.kr/images/ico-imoji08.gif) 0 center no-repeat}
+.card_wrap.allday>h2{background: url(http://alzam-test.babysleep.co.kr/images/ico-imoji09.gif) 0 center no-repeat}
+.card_wrap.hotIssue>h3{font-weight: bold;font-size: 1.1em;}
+.card_wrap.hotIssue .graph{position: relative; width:100%;margin-top: 10px; text-align: left;border: 1px solid var(--primary); padding:20px 20px 20px 26px;background: #fff;font-weight: bold;border-radius: var(--border-radius);}
+.card_wrap.hotIssue .no{border: 1px solid #dcdcdc; }
+.card_wrap.hotIssue .result {float: right;color: #555;font-size: 13px;}
+.card_wrap.hotIssue .graph .bar{position: absolute;left:0;top:0px; background: rgba(229, 64, 64, 0.1);border-radius: var(--border-radius);height: 100%;}
+.card_wrap.hotIssue .graph.no .bar{background: rgba(221, 221, 221, 0.3);}
+.card_wrap.routine .view.chips{float: right;color: #333;font-size: .8em;margin-top: -6px;padding: 3px 30px 1px 14px;background: url(https://icongr.am/feather/chevron-right.svg?size=18&color=EB5353) right 8px center no-repeat;}
+.card_wrap .info .price>.txt{margin-top: 4px;font-size: 12px;color: var(--grayText);padding-left: 22px; background: url(https://icongr.am/material/clock-check-outline.svg?size=17&color=999999) left center no-repeat;}
+
+
+.roadmap .box_wrap{position: relative;margin: auto;max-width: 400px; height: 240px;}
+.roadmap .box_wrap h1{font-weight: bold;font-size: 1.0rem;}
+.roadmap .box_wrap h2{font-weight: bold;font-size: 0.875rem;}
+.roadmap .box_wrap h3{opacity: .6;font-size: .7em;line-height: 12px;}
+.roadmap .box_wrap img{width:20px;height:20px}
+.roadmap .box_wrap .foot{padding:2px 4px 1px 15px;font-weight: normal;font-size: .8em;color:#00afee;line-height: 16px;border: 1px dashed #88dcfa;border-radius: 4px;background: url(https://em-content.zobj.net/thumbs/120/docomo/205/footprints_1f463.png) 3px center no-repeat;background-size: 12px;}
+.roadmap .box_wrap .first{position: absolute;top: 8px;left:11%;text-align: center;display: inline-block;}
+.roadmap .box_wrap .second{position: absolute;top:8px;left:47%;text-align: center;}
+.roadmap .box_wrap .first, 
+.roadmap .box_wrap .second, 
+.roadmap .box_wrap .forth, 
+.roadmap .box_wrap .fifth {display: flex;justify-content: left;align-items: center;}
+.roadmap .box_wrap .second img, .roadmap .box_wrap .fifth img{/float:left}
+.roadmap .box_wrap .second h3, .roadmap .box_wrap .fifth h3{/float: right;}
+.roadmap .box_wrap .third{position: absolute;top:47%;right:2%;width: 20%;text-align: center;display: inline-block;}
+.roadmap .box_wrap .third h2{opacity: 1;font-weight: bold;font-size: 1.2em;}
+.roadmap .box_wrap .third h3{opacity: 1;font-weight: bold;}
+.roadmap .box_wrap .fifth{position: absolute;bottom:2%;left:11%;text-align: center;}
+.roadmap .box_wrap .forth{position: absolute;bottom:2%;left:48%;text-align: center;min-width: 80px;}
+.roadmap .box_wrap .focus {font-size: .8em;color: #fff;top: 31%;left: calc(50% - 20px);transform: translateX(-50%);position: absolute;background: #2c2c2c;padding:9px 12px;border-radius: 10px;}
+.roadmap .box_wrap .focus h4 {font-weight:bold;font-size: 1.1em;}
+
+.routine .last-info{display: flex;justify-content: center;align-items: center;text-align: center; margin: 20px 0px;}
+.routine .last-info dl {border-right: 1px solid var(--bgGray);padding:0 16px}
+.routine .last-info dl:last-child {border-right: 0px;padding-right: 0;}
+.routine .last-info dl:first-child {padding-left: 0;}
+.routine .last-info dl>dt{font-size: 12px;color:var(--grayText)}
+.routine .last-info dl>dd{font-size: 1em;font-weight: bold;}
+
+.behavior_wrap {display:flex;justify-content: space-between; width: 100%;}
+.behavior_wrap a {width: 18%;padding: 6px 0 2px;text-align: center;font-size:11px;color: #aaa; background: #fff;border-radius: 14px;border: 1px solid var(--borderLine);}
+.behavior-icon {width: 100%;height: 30px;}
+.behavior-icon.bmilk{background: url(https://icongr.am/material/mother-nurse.svg?size=32&color=FE9698) center no-repeat;}
+.behavior-icon.powdermilk{background: url(https://icongr.am/material/baby-bottle.svg?size=30&color=f46b7b) center no-repeat;}
+.behavior-icon.baby-food{background: url(http://alzam-test.babysleep.co.kr/images/ico03.svg) center no-repeat;background-size: 24px;}
+.behavior-icon.sleep{background: url(http://alzam-test.babysleep.co.kr/images/ico04.svg) center no-repeat;background-size: 24px;}
+.behavior-icon.diaper{background: url(https://icongr.am/material/human-baby-changing-table.svg?size=30&color=FFD945) center no-repeat;}
+.behavior-icon.play{background: url(https://icongr.am/material/duck.svg?size=34&color=9BDB5E) center bottom no-repeat;background-size: contain!important;}
+.behavior-icon.sleep-cons{background: url(https://icongr.am/material/weather-night.svg?size=348&color=00E8C1) center bottom no-repeat;background-size: contain!important;}
+.behavior-icon.medicine{background: url(https://icongr.am/material/medical-bag.svg?size=34&color=F891EA) center bottom no-repeat;background-size: contain!important;}
+.legend{background: var(--bgGray);padding:6px 0px 6px 20px;border-radius: var(--border-radius);}
+.legend:after{content: '';clear: both;display: block;}
+.legend li{display: inline-block;margin:2px 0px;font-size: 11px;float: left;}
+.legend li span{background-size: 90%!important;background-position: center !important;width:16px;height:16px;display: inline-block;vertical-align: middle;margin-right:2px}
+.btn_segment2{padding:0px 0;width:100%;}
+.btn_segment2 button{padding: 8px 7px 6px;width:33%;border-radius: 0px;border-left-width: 0!important;background-color: #fff;border: 1px solid var(--primary);}
+.btn_segment2 button:first-child{border-radius: 20px 0 0 20px;border-left-width: 1px !important;}
+.btn_segment2 button:last-child{border-radius: 0px 20px 20px 0;}
+.btn_segment2 button.selected{background-color: var(--primary);color: rgba(255, 255, 255, 1)!important;}
+.btn_segment2 button.second{background: url(https://icongr.am/material/check-circle-outline.svg?size=20&color=bbbbbb) 12px center no-repeat;background-color: #f4f4f4;border: 1px solid #ccc;color: #888;}
+.btn_segment2 button.second.selected{background: url(https://icongr.am/material/check-circle.svg?size=20&color=AF9AF4) 12px center no-repeat;background-color: rgba(175, 154, 244, 0.4);border-color:var(--sleep); color: var(--sleep)!important;font-weight: bold;}
+
+
+.banner_wrap img {width: 100%;display: block;}
+.bullet {width: 6px;height: 6px;display: inline-block;margin-right: 6px;border-radius: 100%;vertical-align: middle;background:var(--primary);}
+.purpleBg {background:var(--purple);}
+.skyblueBg {background:var(--skyblue);}
+
+.chips {font-size: .9em;border: 1px solid var(--primary);padding: 2px 10px;border-radius: 20px;color:var(--primary)}
+.chips.gray {border: 1px solid var(--borderLine);color:var(--grayText)}
+
+.box_wrap{border: 1px solid var(--borderLine);width: 100%;border-radius: 16px;}
+.txt-underline{text-decoration: underline var(--primary);}
+.txt-emphasis {
+  text-emphasis-style: dot;
+  text-emphasis-position: over left;
+  text-emphasis-color: red ;
+  -webkit-text-emphasis-color: red ;
+  -webkit-text-emphasis-style: dot;
+  -webkit-text-emphasis-position: over;}
+.btn_large_round {position: relative; width:100%;text-align: left;padding:20px 26px;background: var(--primary);color: #fff;font-size: 1.1em;font-weight: bold;border-radius: var(--border-radius);}
+.btn_large_round::after{content: '';position: absolute;top: 50%;right: 20px;transform: translateY(-50%);
+  width: 30px;height: 20px;background: url(https://icongr.am/clarity/add.svg?size=28&color=ffffff) right center no-repeat;}
+.btn_large_round.line {background:#fff;color: var(--primary);border:1px solid var(--primary);}
+.btn_large_round.line::after{background: url(https://icongr.am/clarity/add.svg?size=28&color=EB5353) right center no-repeat;}
+
+.week_point .collapsible {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 16px 20px 16px 50px;
+  width: 100%;
+  border: 1px solid var(--primary);
+  border-radius: var(--border-radius);
+  outline: none;
+  text-align: left;
+  font-weight: bold;
+  line-height: 30px;
+  background-size: 30px !important;
+}
+.week_point button:nth-child(1).collapsible{background: url(http://alzam-test.babysleep.co.kr/images/ico-month01.png) 12px center no-repeat;}
+.week_point button.collapsible.sleep{background: url(http://alzam-test.babysleep.co.kr/images/ico-month02.png) 12px center no-repeat;}
+.week_point button.collapsible.growth{background: url(http://alzam-test.babysleep.co.kr/images/ico-month03.png) 12px center no-repeat;}
+.week_point button.collapsible.active{border-radius: var(--border-radius) var(--border-radius) 0 0;border-bottom: 0;}
+.week_point button.collapsible disabled{}
+
+.week_point .collapsible .arr {
+  font-size: 0;
+  background: url(https://icongr.am/feather/chevron-down.svg?size=28&color=EB5353) center no-repeat;
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+
+.week_point .active .arr {
+  background: url(https://icongr.am/feather/chevron-up.svg?size=28&color=EB5353) center no-repeat;
+}
+
+.week_point .collapsible.lock .arr {
+  background: url(https://icongr.am/material/lock.svg?size=28&color=EB5353) center no-repeat;
+}
+
+.week_point .content {
+  padding: 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fff;
+}
+.week_point .content ul {
+  border: 1px solid var(--primary);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border-top:0;}
+.week_point .content ul li {
+  border-top: 1px solid var(--borderLine);
+  padding: 14px 20px 14px 50px;}
+
+/** 왼쪽 메뉴 **/
+.music {background:url(http://alzam-test.babysleep.co.kr/images/ico-top01.png) center no-repeat;background-size: 26px;width: 30px;height: 30px;display: inline-block; margin-right: 46px;}
+.rnb_wrap{position: absolute;top:16px;right:20px}
+.lnb_wrap{
+    position: absolute;
+    top:18px;
+    left: 20px;
+} 
+.lnb_wrap.right{
+  top:0px;right: 0px; left: unset;
+  background: url(http://alzam-test.babysleep.co.kr/images/ico-top02.png) center no-repeat;background-size: 28px;
+} 
+input[id="hamburger"], 
+input[id="hamburger2"]{
+  display: none;
+}
+input[id="hamburger"] + label, 
+input[id="hamburger2"] + label {
+  display: block;
+  width: 26px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+input[id="hamburger2"] + label {width: 30px;height: 30px;top: 10px;}
+input[id="hamburger"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 30px;
+  background: #fff;
+  transition: all 0.35s;
+}
+input[id="hamburger2"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 26px;
+  transition: all 0.35s;
+}
+input[id="hamburger2"]:checked + label span {
+  background: url(http://alzam-test.babysleep.co.kr/images/ico-close.svg) center no-repeat;
+  background-size: 30px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+  animation-fill-mode: forwards;
+}
+
+input[id="hamburger"] + label span:nth-child(1) {
+  top: 0;
+}
+input[id="hamburger"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="hamburger"] + label span:nth-child(3) {
+  bottom: 0;
+}
+input[id="hamburger"]:checked + label, 
+input[id="hamburger2"]:checked + label  {
+  z-index: 99;
+}
+input[id="hamburger2"]:checked + label  {
+  position: fixed; left:42px;top:18px;
+}
+input[id="hamburger"]:checked + label span {
+  background: black;
+}
+input[id="hamburger"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="hamburger"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id="hamburger"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+div[class="sidebar"]{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 98;
+  transition: all 0.35s;
+}
+div[class="sidebar right"]{
+  width: 97%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 98;
+  transition: all 0.35s;
+}
+input[id="hamburger"]:checked + label + div {
+  left: 0;
+}
+input[id="hamburger2"]:checked + label + div  {
+  right: 0;
+}
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+.alram_icon{background: url(http://alzam-test.babysleep.co.kr/images/ico-bell.png) center no-repeat;background-size: 25px; width:40px;height:40px;position: absolute; right:18px;top:14px;}
+.alram_icon .dot{position: absolute; right:4px;top:4px;width:5px;height:5px;border-radius: 100%; background:var(--primary)}
+
+.slide_menu_wrap {position: absolute;top:60px;left: 0;overflow-y: scroll;height: 100%;width:100%;padding-bottom:80px;}
+.slide_menu_wrap h1 {font-size: 1.2em;font-weight: bold; line-height: 100%;padding:20px 0;}
+.slide_menu_wrap h2 {color: var(--grayText);font-size: .8em;padding-bottom: 10px;}
+.slide_menu_wrap ul {padding:10px 30px;}
+.slide_menu_wrap ul li a{display: flex;align-items: center;justify-content: space-between;padding:10px 0 8px;width:100%;font-weight: 700;}
+.slide_menu_wrap ul li a:after {content:'';display: inline-block; width:16px;height:16px;opacity: .4; background: url(http://alzam-test.babysleep.co.kr/images/ico-arrow-right.svg) right center no-repeat;background-size: contain;}
+
+.right .slide_menu_wrap{padding:0 30px 80px;}
+.right .slide_menu_wrap ul{padding:0;}
+.slide_menu_wrap .m-select{align-items: center;font-size: .9em;}
+.slide_menu_wrap .m-select select{width: 40%;margin-right: 8px;}
+.sch_wrap {background:#f4f4f4;border-radius: 12px;border:1px solid var(--gray);padding:0px 10px;overflow-y: auto;max-height:260px;}
+.sch_wrap>div {background: #fff url(https://icongr.am/clarity/success-standard.svg?size=26&color=EB5353) 12px center no-repeat;border:1px solid var(--primary);border-radius: 18px;margin:10px 0; padding:10px 20px 10px 50px;}
+.sch_wrap>div.selected {background: #fff url(https://icongr.am/clarity/success-standard.svg?size=26&color=aaaaaa) 12px center no-repeat;border:1px solid #cccccc;}
+
+.sch_wrap h3 {font-weight: 800;font-size: 0.9rem;line-height: 1.1rem;}
+.sch_wrap p {font-size: .9rem;line-height: 1.1rem;color:var(--grayText)}
+
+.division{height:10px; background:#ececec;}
+.banner_wrap.block {margin:14px 20px}
+
+/*아기이정표 수유/수면/성장 위치별 색상*/
+.roadmap table{width:100%;height:240px}
+.roadmap table tr:nth-child(1){height:40px}
+.roadmap table tr:nth-child(2){height:21px}
+.roadmap table tr:nth-child(3){height:118px}
+.roadmap table tr:nth-child(4){height:25px}
+.roadmap table tr:nth-child(5){height:36px}
+.roadmap table tr:nth-child(1) td:nth-child(1){width:10px}
+
+.roadmap table .rmbg1{width: 13px; background: url(http://alzam-test.babysleep.co.kr/images/rmbg01.png) 0 repeat-y;}
+.roadmap table .rmbg2{width: 38%;background: url(http://alzam-test.babysleep.co.kr/images/rmbg02.png) 0 bottom repeat-x;}
+.roadmap table .corner1{width: 13px;background: url(http://alzam-test.babysleep.co.kr/images/rmcorner0.png) 0 bottom no-repeat;}
+.roadmap table .corner2{width: 13px;background: url(http://alzam-test.babysleep.co.kr/images/rmcorner1.png) 0 bottom no-repeat;}
+.roadmap table .rmbg3{background: url(http://alzam-test.babysleep.co.kr/images/rmbg04.png) 0 repeat-y;}
+.roadmap table .rmbg4{background: url(http://alzam-test.babysleep.co.kr/images/rmbg02.png) 0 top repeat-x;}
+.roadmap table .corner3{background: url(http://alzam-test.babysleep.co.kr/images/rmcorner2.png) 0 top no-repeat;}
+.roadmap table .corner4{background: url(http://alzam-test.babysleep.co.kr/images/rmcorner4.png) 0 top no-repeat;}
+.roadmap table .rmbg5{background: url(http://alzam-test.babysleep.co.kr/images/rmbg01.png) 0 repeat-y;}
+
+.roadmap table .rmp01-blue{background: url(http://alzam-test.babysleep.co.kr/images/rmp01-blue.png) 0 no-repeat;}
+.roadmap table .rmp01-red{background: url(http://alzam-test.babysleep.co.kr/images/rmp01-red.png) 0 no-repeat;}
+.roadmap table .rmp01-purple{background: url(http://alzam-test.babysleep.co.kr/images/rmp01-purple.png) 0 no-repeat;}
+.roadmap table .rmp02-blue{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-blue.png) center bottom no-repeat;}
+.roadmap table .rmp02-red{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-red.png) center bottom no-repeat;}
+.roadmap table .rmp02-purple{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-purple.png) center bottom no-repeat;}
+.roadmap table .rmp03-blue{background: url(http://alzam-test.babysleep.co.kr/images/rmp03-blue.png) left center no-repeat;}
+.roadmap table .rmp03-red{background: url(http://alzam-test.babysleep.co.kr/images/rmp03-red.png) left center no-repeat;}
+.roadmap table .rmp03-purple{background: url(http://alzam-test.babysleep.co.kr/images/rmp03-purple.png) left center no-repeat;}
+.roadmap table .rmp04-blue{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-blue.png) center top no-repeat;}
+.roadmap table .rmp04-red{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-red.png) center top no-repeat;}
+.roadmap table .rmp04-purple{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-purple.png) center top no-repeat;}
+.roadmap table .rmp05-blue{background: url(http://alzam-test.babysleep.co.kr/images/rmp04-blue.png) 0 no-repeat;}
+.roadmap table .rmp05-red{background: url(http://alzam-test.babysleep.co.kr/images/rmp04-red.png) 0 no-repeat;}
+.roadmap table .rmp05-purple{background: url(http://alzam-test.babysleep.co.kr/images/rmp04-purple.png) 0 no-repeat;}
+.roadmap table .rmp02-blue-active{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-blue-active.png) center bottom no-repeat;}
+.roadmap table .rmp02-red-active{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-red-active.png) center bottom no-repeat;}
+.roadmap table .rmp02-purple-active{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-purple-active.png) center bottom no-repeat;}
+.roadmap table .rmp03-blue-active{background: url(http://alzam-test.babysleep.co.kr/images/rmp03-blue-active.png) left center no-repeat;}
+.roadmap table .rmp03-red-active{background: url(http://alzam-test.babysleep.co.kr/images/rmp03-red-active.png) left center no-repeat;}
+.roadmap table .rmp03-purple-active{background: url(http://alzam-test.babysleep.co.kr/images/rmp03-purple-active.png) left center no-repeat;}
+.roadmap table .rmp04-blue-active{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-blue-active.png) center top no-repeat;}
+.roadmap table .rmp04-red-active{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-red-active.png) center top no-repeat;}
+.roadmap table .rmp04-purple-active{background: url(http://alzam-test.babysleep.co.kr/images/rmp02-purple-active.png) center top no-repeat;}
+
+
+.roadmap table td[class^=rmp01],
+.roadmap table td[class^=rmp05] {background-size: 25px;}
+.roadmap table div[class^=rmp02],
+.roadmap table div[class^=rmp04] {height: 100%;background-size: 42px; }
+.roadmap table div[class^=rmp03] {height: 100%;background-size: 14px; }
+
+
+
+/*햄버거메뉴 09-25추가*/
+.slide_menu_gallery {position: absolute;top:60px;left: 0;overflow-y: scroll;height: 100%;width:100%;padding-bottom:80px;}
+.slide_menu_gallery ul.icon-menu {display: flex;justify-content: flex-start;align-items: center;flex-wrap: wrap;margin: 20px 10px;}
+.slide_menu_gallery ul.icon-menu li {width:25%;padding: 12px 0;text-align: center;}
+.slide_menu_gallery ul.icon-menu li a{font-size: 13px;}
+.slide_menu_gallery ul.icon-menu li a::before {content:'';display:block; width:100%;height:50px; margin-bottom: 2px; background-position:center;background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg01.png);background-repeat:no-repeat;background-size: contain;}
+.slide_menu_gallery ul.icon-menu li:nth-child(2) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg02.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(3) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg03.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(4) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg04.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(5) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg05.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(6) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg06.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(7) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg09.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(8) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg10.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(9) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg11.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(10) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg12.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(11) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg13.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(12) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg14.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(13) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg15.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(14) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg16.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(15) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg17.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(16) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg18.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(17) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg19.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(18) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg20.png);}
+.slide_menu_gallery ul.icon-menu li:nth-child(19) a::before {background-image: url(http://alzam-test.babysleep.co.kr/images/ico-hamburg21.png);}
+
+/*shop 09-20추가*/
+.prod_list {display: flex;flex-flow: row wrap;justify-content: space-between;}
+.prod_list li{padding:10px 1px;float:none;width: 49%;}
+.prod_list li a{display: block;}
+.prod_list img{width: 100%;height: 120px; object-fit: cover; border-radius: 4px;}
+.prod_info {position: relative;font-weight: 300;height: 130px;}
+.prod_info h2 {width:100%;font-size: 1.1rem;font-weight: bold;height:52px; padding: 8px 0 0;overflow: hidden;text-overflow: ellipsis;word-break: break-word;display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical}
+.prod_info .price {font-size: 14px;height:22px;color:#999;text-align: right;}
+.prod_info h3 {display: flex;justify-content: space-between; font-size: 1rem;font-weight: bold;padding: 0px 0 6px;}
+.prod_info h3>strong {color: var(--primary);}
+.prod_info .option {display: flex;justify-content: space-between;}
+.prod_info .chip {background-color: var(--purple);color:#fff;border-radius: 3px;padding:0px 10px;font-size:11px;}
+.prod_info p{font-size: .95rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;word-break: break-all;}
+.prod_info .review {font-size: 14px;padding-left: 20px; background: url(https://icongr.am/jam/star-f.svg?size=18&color=FFD945) 0 center no-repeat;}
+.prod_info .zzim {position: absolute;right:8px;top:-46px;}
+.prod_info .zzim button {display: inline-block;width: 30px;height: 30px;border-radius: 100%;padding: 6px;background:rgba(0, 0, 0, 0.3) url(https://icongr.am/jam/heart.svg?size=22&color=ffffff) center no-repeat;}
+.prod_info .zzim button.selected {background-color:#f46b7b;}
