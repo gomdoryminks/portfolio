@@ -10,13 +10,40 @@ body {
 }
 
 /* 2025 aljam css */
-.aljam .aljam__inner-fix {
-  height: calc(constant(safe-area-inset-bottom) + 100%);
-  height: calc(env(safe-area-inset-bottom) + 100%);
+.aljam .aljam__inner-fix:has(.aljam__write-list > li.full-height) {
+  height: calc(constant(safe-area-inset-bottom) + 100vh);
+  height: calc(env(safe-area-inset-bottom) + 100vh);
+}
+.aljam .aljam__inner-fix .aljam__header {
+  top: calc(constant(safe-area-inset-top) + 0px);
+  top: calc(env(safe-area-inset-top) + 0px);
+}
+.aljam .aljam__inner-fix .aljam__header + .aljam__page:has(.aljam__tablist):not(:has(.aljam__profile)) .aljam__tablist {
+  top: calc(constant(safe-area-inset-top) + 60px);
+  top: calc(env(safe-area-inset-top) + 60px);
+}
+.aljam .aljam__inner-fix .aljam__profile + .aljam__tablist {
+  top: 0;
+}
+.aljam .aljam__inner-fix .aljam__tablist {
+  top: calc(constant(safe-area-inset-top) + 0px);
+  top: calc(env(safe-area-inset-top) + 0px);
+}
+.aljam .aljam__inner-fix .aljam__box + * {
+  bottom: calc(constant(safe-area-inset-bottom) + 0px);
+  bottom: calc(env(safe-area-inset-bottom) + 0px);
+}
+.aljam .aljam__inner-fix .aljam__btn-fix-left, .aljam .aljam__inner-fix .aljam__btn-fix-right {
+  bottom: calc(constant(safe-area-inset-bottom) + 20px);
+  bottom: calc(env(safe-area-inset-bottom) + 20px);
 }
 .aljam .aljam__layer {
-  height: calc(constant(safe-area-inset-bottom) + 100% + 1px);
-  height: calc(env(safe-area-inset-bottom) + 100% + 1px);
+  height: calc(constant(safe-area-inset-bottom) + 100%);
+  height: calc(env(safe-area-inset-bottom) + 100%);
   padding-bottom: constant(safe-area-inset-bottom);
   padding-bottom: env(safe-area-inset-bottom);
+}
+.aljam .aljam__layer#questionBuyLayer {
+  height: calc(constant(safe-area-inset-bottom) + 100% + 1px);
+  height: calc(env(safe-area-inset-bottom) + 100% + 1px);
 }
