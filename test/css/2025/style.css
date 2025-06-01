@@ -1127,7 +1127,8 @@
   flex-flow: column;
 }
 .aljam .aljam__inner-fix:has(.aljam__write-list > li.full-height) {
-  height: 100svh;
+  height: calc(100vh - 0px);
+  height: calc(var(--vh, 1vh) * 100 - 0px);
 }
 .aljam .aljam__inner-fix:has(.aljam__page > .aljam__btn) .aljam__box, .aljam .aljam__inner-fix:has(.aljam__page > .aljam__btn-fix) .aljam__box {
   padding-bottom: 88px;
